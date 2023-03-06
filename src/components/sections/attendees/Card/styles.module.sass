@@ -1,0 +1,49 @@
+.coloredText
+    background: var(--main-gradient)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    
+.item
+    display: flex
+    flex-flow: column
+    gap: 30px
+    .header
+        display: flex
+        align-items: flex-start
+        justify-content: enter
+        gap: 10px
+        .avatar
+            min-width: 36px
+            height: 28px
+            overflow: hidden
+            position: relative
+        .information
+            display: flex
+            flex-flow: column
+            justify-items: center
+            .author
+                text-transform: uppercase
+                font-size: 26px
+                font-style: italic
+                padding-right: 10px
+                text-overflow: ellipsis
+                overflow: hidden
+            .from
+                font-size: 16px
+                font-weight: 400
+        .verification
+            position: relative
+            min-width: 20px
+            height: 20px
+            margin-top: 10px
+            .check
+                position: absolute
+                left: 0
+                top: 0
+                width: 100%
+                height: 100%
+                display: flex
+                align-items: center
+                justify-content: center
+    .body
+        font-size: 20px

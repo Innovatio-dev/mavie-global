@@ -1,0 +1,106 @@
+{
+    "title": "GYIK",
+    "title1": "Általános",
+    "title2": "TIER",
+    "title12": "1. és 2.",
+    "title3": "TIER",
+    "title34": "3. és 4.",
+    "general": {
+        "item1": {
+            "title": "Kvalifikáltam a Dubai Leadership Eventre. Van valami határidő a helyem biztosítására?",
+            "content": "<p>Igen, az új határidő március 3.<br /> <br /> Minden minős&uuml;lt tagnak k&eacute;t e-mailt kellett kapnia, amelyekben r&eacute;szletes &uacute;tmutat&aacute;st kaptak arr&oacute;l, hogyan biztos&iacute;ts&aacute;k be a hely&uuml;ket a Dubai Leadership Eventre. <br /> <br />Érvényes március 3-ig, 23:59 CET-ig;gi r&eacute;szv&eacute;teli d&iacute;jat kell fizetni. Ez a d&iacute;j csak egy biztons&aacute;gi d&iacute;j, amelyet visszat&eacute;r&iacute;t&uuml;nk, miut&aacute;n r&eacute;szt vesz az esem&eacute;nyen, &eacute;s megerős&iacute;ti a visszat&eacute;r&iacute;t&eacute;si p&eacute;nzt&aacute;rca c&iacute;m&eacute;t. Az r&eacute;szv&eacute;teli let&eacute;t visszafizet&eacute;se 2023. m&aacute;rcius 17-24. k&ouml;z&ouml;tt t&ouml;rt&eacute;nik. <br /> <br /> A biztons&aacute;gi r&eacute;szv&eacute;teli d&iacute;j befizet&eacute;s&eacute;nek l&eacute;p&eacute;sei a k&ouml;vetkezők: <br /> <br /> <div class='pl-6'><span class='list-arrow'>1. l&eacute;p&eacute;s:</span> <br /> 199 doll&aacute;r biztons&aacute;gi r&eacute;szv&eacute;teli d&iacute;j befizet&eacute;se: <br /> (K&uuml;ldje el a $199 USDT-t (BEP-20) ehhez l&eacute;trehozott Binance Smart Chain (BSC) h&aacute;l&oacute;zati c&iacute;mre) <br /> <br /> AZ ERRE A C&Eacute;LRA L&Eacute;TREHOZOTT EGYEDI T&Aacute;RCA-C&Iacute;MET ELK&Uuml;LDT&Uuml;K AZ EMAL C&Iacute;M&Eacute;RE. CSAK AZT A T&Aacute;RCA C&Iacute;M&Eacute;T HASZN&Aacute;LJA FIZET&Eacute;SRE. <br /> </p><span class='list-arrow'>2. l&eacute;p&eacute;s:</span> <br /> A sikeres fizet&eacute;st k&ouml;vetően k&uuml;ldj&ouml;n e-mailt nek&uuml;nk az events@mavie.global c&iacute;mre. <br /> Az e-mailnek tartalmaznia kell a k&ouml;vetkezőket: <br /> - a felhaszn&aacute;l&oacute;i azonos&iacute;t&oacute;j&aacute;t <br /> - az &Ouml;n kereszt- &eacute;s vezet&eacute;knev&eacute;t <br /> - a fizet&eacute;s Binance Smart Chain tranzakci&oacute;s hash-je txid bem&aacute;solva, NEM FOT&Oacute; <br /> - Saj&aacute;t Binance Smart Chain (BEP-20) visszat&eacute;r&iacute;t&eacute;si t&aacute;rca c&iacute;me (refund wallet)</div>"        
+        },
+        "item2":{
+            "title": "Kaphatok visszatérítést, ha vettem egy rendezvényre szóló jegyet, de meggondoltam magam a részvétel kapcsán ?",
+            "content": "Nem, a megvásárolt rendezvényjegyek visszatérítésére nincs lehetőség"
+        },
+        "item3":{
+            "title": "Ha már Dubaiban lakom, kell-e biztonsági részvételi díjat fizetnem?",
+            "content": "Igen, mindenkinek, aki az 1., 2., 3. vagy 4. TIER elérésével kvalifikálta magát a Dubai Leadership Eventre, meg kell erősítenie részvételét a 199 USD (USDT) biztonsági részvételi díj megfizetésével."        
+        },
+        "item4":{
+            "title": "Mikor és hogyan kaphatom vissza a biztonsági részvételi díjat?",
+            "content": "Kérjük, vegye figyelembe, hogy részvételét meg kell erősítenie, és 199 USD (USDT) biztonsági részvételi díjat kell fizetnie. az Ön számára létrehozott egyedi, dedikált tárcába (lásd a fenti utasításokat). Ez a díj csak egy biztonsági letét, amelyet visszatérítünk, miután részt vesz az eseményen, és megerősíti a visszatérítési tárca címét. A biztonsági visszatérítés folyamata 2023. március 17. és 24. között történik. A díj nem kerül visszatérítésre, ha Ön nem vesz részt a rendezvényen."        
+        },
+        "item5":{
+            "title": "Kvalifikáltam a Dubai Leadership Eventre, de nem kaptam egy e-mailt a helyem biztosítására vonatkozó utasításokkal. Mit kellene tennem?",
+            "content": "<p>Ha el&eacute;rte a dubai prom&oacute;ci&oacute;ra vonatkoz&oacute; TIER 1, 2, 3 vagy 4 minős&iacute;t&eacute;st, &eacute;s nem kapott e-mailt, k&eacute;rj&uuml;k, <br />ellenőrizze a lev&eacute;lszem&eacute;t/spam mapp&aacute;t. Ha tov&aacute;bbra sem tal&aacute;lja az utas&iacute;t&aacute;sokat tartalmaz&oacute; e-mailt, <br />k&eacute;rj&uuml;k, &iacute;rjon az events@mavie.global c&iacute;mre a k&ouml;vetkező t&aacute;rgyban: Dubai Leadership Event Issue <br /><br />Az e-mailnek tartalmaznia kell: <br />- a felhaszn&aacute;l&oacute;i azonos&iacute;t&oacute;j&aacute;t UID <br />- a felhaszn&aacute;l&oacute;i azonos&iacute;t&oacute;hoz kapcsol&oacute;d&oacute; e-mail c&iacute;m <br />- az &Ouml;n kereszt- &eacute;s vezet&eacute;knev&eacute;t <br />- k&eacute;pernyőfot&oacute; a Back office &bdquo;Dubai Event Progress&rdquo;-r&oacute;l ahol l&aacute;tszik a minős&uuml;l&eacute;se</p>"
+        },
+        "item6":{
+            "title": "Kvalifikáltam a TIER szintre, de nem tudok részt venni az eseményen. Kaphatok más jutalmat a minősülésért?",
+            "content": "Nem. A TIER minősítés egyedi utalványként működik, amely egyetlen személyhez van kötve, és csak a Dubai Leadership Eventen való részvételkor használható fel."
+        },
+        "item7":{
+            "title": "Kvalifikáltam a TIER szintre, de nem tudok részt venni az eseményen. Át tudom adni a minősülésemet másnak?",
+            "content": "Nem. A TIER minősülés egyedi utalványként működik, amely egyetlen személyhez van kötve, és csak az adott személy igényelheti és használhatja fel, amikor részt vesz a Dubai Leadership Eventen."        
+        },
+        "item8":{
+            "title": "Hol találhatok további információt az esemény napirendjéről és menetrendjéről?",
+            "content": "<p>-Helysz&iacute;n: JW Marriott Marquis Hotel Dubai <br />-C&iacute;m: Sheikh Zayed Road - Business Bay - Dubai <br />-A program időpontja: 2023. m&aacute;rcius 11. &eacute;s 2023. m&aacute;rcius 12 <br />-Időpont: 10:00 a rendezv&eacute;ny programj&aacute;nak kezdete.</p>"        
+        },
+        "item9":{
+            "title": "A MaVie tagja vagyok, de NEM kvalifikáltam a Dubai promóciót. Eljöhetek még a rendezvényre?",
+            "content": "<p>Korl&aacute;tozott sz&aacute;m&uacute; jegyet foglaltunk le a Dubai Leadership Eventre azon MaVie-tagok sz&aacute;m&aacute;ra, akik nem vehettek r&eacute;szt a prom&oacute;ci&oacute;ban. A jegy &aacute;ra 199 USD (USDT), &eacute;s megv&aacute;s&aacute;rolhat&oacute; az events@mavie.global e-mail c&iacute;mre jelezve a sz&aacute;nd&eacute;kot. Az email t&aacute;rgya: Dubai Leadership Event Tickets.<br /><br />Az e-mailnek a k&ouml;vetkezőket kell tartalmaznia: <br />- a felhaszn&aacute;l&oacute;i azonos&iacute;t&oacute;j&aacute;t UID <br />- Vezet&eacute;kn&eacute;v, Keresztn&eacute;v <br /><br />E-mailben v&aacute;laszt kapsz a jegyv&aacute;s&aacute;rl&aacute;ssal kapcsolatban.<br /><br />A rendezv&eacute;nyjegy bel&eacute;p&eacute;st biztos&iacute;t a m&aacute;rcius 11-i &eacute;s 12-i rendezv&eacute;ny teljes programj&aacute;ba, de nem tartalmazza a Yacht Party-t &eacute;s m&aacute;s Dubai &eacute;lm&eacute;nyeket.<br /><br />A megv&aacute;s&aacute;rolhat&oacute; rendezv&eacute;nyjegyek &eacute;rkez&eacute;si sorrendben v&aacute;s&aacute;rolhat&oacute;k meg, &eacute;s csak a rendezv&eacute;ny helysz&iacute;n befogad&oacute;k&eacute;pess&eacute;g&eacute;nek el&eacute;r&eacute;s&eacute;ig tudjuk biztos&iacute;tani.</p>"
+        },
+        "item10":{
+            "title": "Nem vagyok a MaVie tagja. Még részt vehetek az eseményen?",
+            "content": "<p>Korl&aacute;tozott sz&aacute;m&uacute; jegyet foglaltunk le a Dubai Leadership Eventre azon MaVie-tagok sz&aacute;m&aacute;ra, akik nem vehettek r&eacute;szt a prom&oacute;ci&oacute;ban. A jegy &aacute;ra 199 USD (USDT), &eacute;s megv&aacute;s&aacute;rolhat&oacute; az events@mavie.global e-mail c&iacute;mre jelezve a sz&aacute;nd&eacute;kot. Az email t&aacute;rgya: Dubai Leadership Event Tickets. <br /><br />Az e-mailnek a k&ouml;vetkezőket kell tartalmaznia: <br />- a felhaszn&aacute;l&oacute;i azonos&iacute;t&oacute;j&aacute;t UID <br />- Vezet&eacute;kn&eacute;v, Keresztn&eacute;v<br /><br />E-mailben v&aacute;laszt kapsz a jegyv&aacute;s&aacute;rl&aacute;ssal kapcsolatban<br />. <br />A rendezv&eacute;nyjegy bel&eacute;p&eacute;st biztos&iacute;t a m&aacute;rcius 11-i &eacute;s 12-i rendezv&eacute;ny teljes programj&aacute;ba, de nem tartalmazza a Yacht Party-t &eacute;s m&aacute;s Dubai &eacute;lm&eacute;nyeket. <br /><br />A megv&aacute;s&aacute;rolhat&oacute; rendezv&eacute;nyjegyek &eacute;rkez&eacute;si sorrendben v&aacute;s&aacute;rolhat&oacute;k meg, &eacute;s csak a rendezv&eacute;ny helysz&iacute;n befogad&oacute;k&eacute;pess&eacute;g&eacute;nek el&eacute;r&eacute;s&eacute;ig tudjuk biztos&iacute;tani.</p>"
+        },
+        "item11":{
+            "title": "Kvalifikáltam a Dubai promócióra, és olyanokkal szeretnék jönni, akik nem tagjai a MaVie-nak. Lehetséges ez, és hogyan zajlik az eljárás?",
+            "content": "<p>Korl&aacute;tozott sz&aacute;m&uacute; jegyet foglaltunk le a Dubai Leadership Eventre azon MaVie-tagok sz&aacute;m&aacute;ra, akik nem vehettek r&eacute;szt a prom&oacute;ci&oacute;ban. A jegy &aacute;ra 199 USD (USDT), &eacute;s megv&aacute;s&aacute;rolhat&oacute; az events@mavie.global e-mail c&iacute;mre jelezve a sz&aacute;nd&eacute;kot. Az email t&aacute;rgya: Dubai Leadership Event Tickets. <br /><br />Az e-mailnek a k&ouml;vetkezőket kell tartalmaznia: <br />- a felhaszn&aacute;l&oacute;i azonos&iacute;t&oacute;j&aacute;t UID <br />- Vezet&eacute;kn&eacute;v, Keresztn&eacute;v<br /><br />E-mailben v&aacute;laszt kapsz a jegyv&aacute;s&aacute;rl&aacute;ssal kapcsolatban.<br /><br />A rendezv&eacute;nyjegy bel&eacute;p&eacute;st biztos&iacute;t a m&aacute;rcius 11-i &eacute;s 12-i rendezv&eacute;ny teljes programj&aacute;ba, de nem tartalmazza a Yacht Party-t &eacute;s m&aacute;s Dubai &eacute;lm&eacute;nyeket.<br /><br />T&ouml;bb jegyet is v&aacute;s&aacute;rolhat de a rendezv&eacute;nyjegyek &eacute;rkez&eacute;si sorrendben v&aacute;s&aacute;rolhat&oacute;k meg, &eacute;s csak a rendezv&eacute;nyhelysz&iacute;n befogad&oacute;k&eacute;pess&eacute;g&eacute;nek el&eacute;r&eacute;s&eacute;ig tudjuk biztos&iacute;tani.</p>"        
+        },
+        "item12":{
+            "title": "Kvalifikáltam a Dubai promócióra, és olyanokkal szeretnék jönni, akik nem tagjai a MaVie-nak. Lehetséges ez, és hogyan zajlik az eljárás?",
+            "content": "<p>Korl&aacute;tozott sz&aacute;m&uacute; jegyet foglaltunk le a Dubai Leadership Eventre azon MaVie-tagok sz&aacute;m&aacute;ra, akik nem vehettek r&eacute;szt a prom&oacute;ci&oacute;ban. A jegy &aacute;ra 199 USD (USDT), &eacute;s megv&aacute;s&aacute;rolhat&oacute; az events@mavie.global e-mail c&iacute;mre jelezve a sz&aacute;nd&eacute;kot. Az email t&aacute;rgya: Dubai Leadership Event Tickets. <br /><br />Az e-mailnek a k&ouml;vetkezőket kell tartalmaznia: <br />- a felhaszn&aacute;l&oacute;i azonos&iacute;t&oacute;j&aacute;t UID <br />- Vezet&eacute;kn&eacute;v, Keresztn&eacute;v<br /><br />E-mailben v&aacute;laszt kapsz a jegyv&aacute;s&aacute;rl&aacute;ssal kapcsolatban.<br /><br />A rendezv&eacute;nyjegy bel&eacute;p&eacute;st biztos&iacute;t a m&aacute;rcius 11-i &eacute;s 12-i rendezv&eacute;ny teljes programj&aacute;ba, de nem tartalmazza a Yacht Party-t &eacute;s m&aacute;s Dubai &eacute;lm&eacute;nyeket.<br /><br />T&ouml;bb jegyet is v&aacute;s&aacute;rolhat de a rendezv&eacute;nyjegyek &eacute;rkez&eacute;si sorrendben v&aacute;s&aacute;rolhat&oacute;k meg, &eacute;s csak a rendezv&eacute;nyhelysz&iacute;n befogad&oacute;k&eacute;pess&eacute;g&eacute;nek el&eacute;r&eacute;s&eacute;ig tudjuk biztos&iacute;tani.</p>"        
+        },
+        "item13":{
+            "title": "Kaphatok visszatérítést, ha vettem egy rendezvényre szóló jegyet, de meggondoltam magam a részvétel kapcsán ?",
+            "content": "Nem, a megvásárolt rendezvényjegyek visszatérítésére nincs lehetőség."
+        },
+        "item14":{
+            "title": "Vannak-e olyan transzferek, amelyek elszállítják a résztvevőket az eseményre?",
+            "content": "Nem, kérjük, vegye figyelembe, hogy mindenkinek magának kell megszerveznie utazását és szállását; Ezen kikötés alapján a rendezvényszervezők nem szerveznek reptéri transzfert vagy szállodai transzfert."
+        },
+        "item15":{
+            "title": "VÍZUM-ra van szükségem. Kaphatok meghívót a cégtől? Hol lehet jelentkezni rá?",
+            "content": "Bármilyen VISA-követelmény esetén forduljon csapatunkhoz az events@mavie.global e-mail címen"
+        },
+        "item16":{
+            "title": "Kihez fordulhatok az eseménnyel kapcsolatos további információkért?",
+            "content": "Kérjük, ne habozzon kapcsolatba lépni csapatunkkal az events@mavie.global címen"
+        }
+    },
+    "tier12": {
+        "item1": {
+            "title": "Elértem a TIER 2-t. Hogyan igényelhetem a Dubai Experience és Yacht party belépőket ?",
+            "content": "Az Ön szintjének megfelelően , ha kifizeti a biztonsági részvételi díjat (az utasításokat a fenti Általános GYIK részben találja), a Dubai élmény és a Yacht party automatikusan beletartozik a programjába."        
+        },
+        "item2": {
+            "title": "Ha elértem az 1. és/vagy TIER 2. SZINTET, részt vehetek a rendezvény mindkét napján, március 11-én és 12-én?",
+            "content": "Igen, az esemény március 11-én és 12-én van, és mindkét nap minden minősült tagnak szól."
+        }
+    },
+    "tier34": {
+        "item1": {
+            "title": "Magunknak vásároljunk a repülőjegyet? Hol tudunk jegyet benyújtani a visszatérítéshez?",
+            "content": "<p>V&aacute;s&aacute;rolja meg a rep&uuml;lőjegyet, &eacute;s k&ouml;vesse az al&aacute;bbi visszat&eacute;r&iacute;t&eacute;si utas&iacute;t&aacute;sokat. <br /> <br /> Megjegyz&eacute;s: A V&aacute;llalat 800 USD-ig (USDT) fedezi a rep&uuml;lőjegyeket a TIER 3 &eacute;s TIER 4 minős&uuml;l&eacute;sek eset&eacute;n. <br /> <br /> A k&ouml;vetkező l&eacute;p&eacute;seket kell k&ouml;vetnie a rep&uuml;lőjegy visszat&eacute;r&iacute;t&eacute;s&eacute;hez: <br /> </p><div class='pl-6'><span class='list-arrow'>1. l&eacute;p&eacute;s:</span> K&eacute;sz&iacute;tse elő a v&aacute;s&aacute;rl&aacute;st igazol&oacute; bizonylatot vagy a rep&uuml;lőjegy m&aacute;solat&aacute;t <br /> <br /> <span class='list-arrow'>2. l&eacute;p&eacute;s:</span> K&eacute;sz&iacute;tse elő &eacute;rv&eacute;nyes &uacute;tlevel&eacute;nek vil&aacute;gos, olvashat&oacute; szkennel&eacute;s&eacute;t <br /> <br /> <span class='list-arrow'>3. l&eacute;p&eacute;s:</span> K&uuml;ldje el az &ouml;sszes elk&eacute;sz&iacute;tett dokumentumot az events@mavie.global e-mail c&iacute;mre 2023. m&aacute;rcius 3-ig, k&ouml;z&eacute;p-eur&oacute;pai idő szerint 23:59-ig. <br /> </div><p>A m&aacute;rcius 3., 23:59 CET ut&aacute;ni rep&uuml;lőjegy-visszat&eacute;r&iacute;t&eacute;si k&eacute;relmek elutas&iacute;t&aacute;sra ker&uuml;lnek.</p>"        
+        },
+        "item2": {
+            "title": "Szállodai szállásra kvalifikáltam magam. Mit kellene tennem?",
+            "content": "Először is, kérjük, győződjön meg arról, hogy március 3-ig, 23:59 CET-ig befizette a biztonsági részvételi díjat és lefoglalta repülőjegyét, és e-mailt küldött (az összes utasítás fentebb megtalálható) az events@mavie.global címre."        
+        },
+        "item3": {
+            "title": "Szállodai szállásra kvalifikáltam magam. Mit kellene tennem?",
+            "content": "Először is, kérjük, győződjön meg arról, hogy március 3-ig, 23:59 CET-ig befizette a biztonsági részvételi díjat és lefoglalta repülőjegyét, és e-mailt küldött (az összes utasítás fentebb megtalálható) az events@mavie.global címre."
+        },
+        "item4": {
+            "title": "Szállodai szoba minősülés esetén a szoba 2 fős ? Ez azt jelenti, hogy vihetek +1 főt?",
+            "content": "Felhívjuk figyelmét, hogy minden szoba egyszemélyes (1 fő részére)."
+        },
+        "item5": {
+            "title": "Ha már Dubaiban lakom, átadhatom a repjegy minősülést és/vagy a szobámat valaki másnak a csapatomból?",
+            "content": "Nem, sajnáljuk ez a lehetőség nem elérhető"
+        }
+    }
+}

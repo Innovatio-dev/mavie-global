@@ -1,0 +1,7 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "scss.lint.unknownAtRules": "ignore",
+    "dotenv.enableAutocloaking": true
+}

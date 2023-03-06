@@ -1,0 +1,22 @@
+.mouseElement {
+    @apply mt-3;
+
+    .path {
+        @apply flex flex-col items-center gap-[2px];
+
+        span:first-child, span:last-child {
+            @apply w-[2px] h-1 bg-brand-gray rounded;
+        }
+
+        span:nth-child(2) {
+            @apply w-[2px] h-2 bg-brand-gray rounded;
+        }
+    }
+
+    .mouse {
+        @apply w-5 h-8 flex justify-center bg-black border-2 border-brand-gray rounded-xl animate-bounce;
+        span {
+            @apply w-[2px] h-2 bg-brand-gray rounded mt-1;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'colors';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: #fff;
+  background: #000;
+  background-image: var(--dubai-gradient);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+.lines {
+  background-attachment: fixed;
+  background-color: #000;
+  background: 
+    url("/assets/images/texture_left_lines.webp") 0% 90vw/150px 1200px repeat-y, 
+    url("/assets/images/texture_right_lines.webp") 100% 120vw/150px 1900px no-repeat;
+  @media (min-width: 600px){
+    background: 
+      url("/assets/images/texture_left_lines.webp") 0 70vw/450px 1500px repeat-y, 
+      url("/assets/images/texture_right_lines.webp") 100% 40vw/450px 2800px no-repeat;
+  }  
+}
+
+.list-arrow{
+  align-items: center;
+  margin-left: -16px;
+  font-weight: 500;
+  &::before{
+    content: url('/assets/svg/list-arrow.svg');
+    padding: 0;
+    position: relative;
+    left: -8px;
+    bottom: -2px;
+  }
+}

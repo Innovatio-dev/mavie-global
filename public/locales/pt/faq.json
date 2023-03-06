@@ -1,0 +1,105 @@
+{
+    "title": "PERGUNTAS FREQUENTES",
+    "title1": "Em geral",
+    "title2": "Nível",
+    "title3": "Nível",
+    "title12": "1 e 2",
+    "title34": "3 e 4",
+    "general": {
+        "item1": {
+            "title": "Eu me qualifiquei para o DUBAI LEADERSHIP EVENT. Existe algum prazo para garantir minha vaga?",
+            "content": "<p>Sim, o novo prazo para garantir sua vaga &eacute; at&eacute; 3rd of March. <br /><br /> Todos os membros qualificados devem ter recebido dois e-mails com instru&ccedil;&otilde;es detalhadas sobre como garantir seus lugares para o DUBAI LEADERSHIP EVENT <br /> Voc&ecirc; deve pagar uma taxa de participa&ccedil;&atilde;o de seguran&ccedil;a at&eacute; 3rd of March, 23:59 CET. (hor&aacute;rio da Europa). <br /> Essa &eacute; apenas uma taxa de seguran&ccedil;a e ser&aacute; reembolsada ap&oacute;s voc&ecirc; participar do evento e confirmar o endere&ccedil;o da sua carteira de reembolso. O processo de devolu&ccedil;&atilde;o da respectiva taxa vai ocorrer entre os dias 17 e 24 de mar&ccedil;o de 2023. <br /><br /> Aqui est&atilde;o as etapas para pagar a taxa de participa&ccedil;&atilde;o de seguran&ccedil;a:</p><p class='pl-6'><span class='list-arrow'>Passo 1:</span><br /> Deposite a taxa de participa&ccedil;&atilde;o de seguran&ccedil;a de US$199: <br /> (Envie 199 USDT BEP-20 para o endere&ccedil;o que foi criado para voc&ecirc; na rede Binance Smart Chain BSC ) <br /><br /> FOI ENVIADO PARA SEU E-MAIL UM ENDERE&Ccedil;O DE CARTEIRA PERSONALIZADO PARA VOC&Ecirc;. USE APENAS ESSE ENDERE&Ccedil;O DE CARTEIRA PARA FAZER O PAGAMENTO. <br /><br /><span class='list-arrow'>Passo 2:</span><br /> Envie-nos um e-mail com a confirma&ccedil;&atilde;o do pagamento bem-sucedido para events@mavie.global <br /> O e-mail deve incluir o seguinte: <br /> - seu n&uacute;mero de usu&aacute;rio (ID) <br /> - seu nome e sobrenome <br /> - o hash da transa&ccedil;&atilde;o que foi paga da rede de Binance Smart Chain <br /> - seu endere&ccedil;o de carteira de reembolso da Binance Smart Chain (BEP-20)</p>"        
+        },
+        "item2":{
+            "title": "Posso obter um reembolso da minha taxa de segurança se eu mudar de ideia sobre participar?",
+            "content": "Não. Os reembolsos serão fornecidos apenas aos membros que se qualificaram e compareceram aos dois dias do evento."
+        },
+        "item3":{
+            "title": "Se eu já estiver localizado em Dubai, tenho que pagar uma taxa de participação de segurança?",
+            "content": "Sim, todos os que se qualificaram para o Dubai Leadership Event alcançando o Nível 1,2,3 ou 4 devem confirmar sua participação pagando a taxa de segurança de US$199 (USDT)."        
+        },
+        "item4":{
+            "title": "Quando e como posso obter o reembolso da minha taxa de participação de segurança?",
+            "content": "Esteja ciente de que você deve confirmar sua participação e depositar uma taxa de participação de segurança de US$199 (USDT) na carteira exclusiva criada apenas para você (consulte as instruções acima). Essa taxa é apenas um depósito de segurança e será reembolsada após você participar do evento e confirmar o endereço da sua carteira de reembolso. O processo de reembolso da taxa de segurança acontecerá entre os dias 17 e 24 de março de 2023. A taxa não será reembolsada caso você não participe do evento."
+        },
+        "item5":{
+            "title": "Eu me qualifiquei para o Dubai Leadership Event, mas não recebi um e-mail com instruções para garantir minha vaga. O que devo fazer?",
+            "content": "<p>Se voc&ecirc; conseguiu se classificar aos N&Iacute;VEIS 1,2,3 ou 4 para a promo&ccedil;&atilde;o de Dubai e n&atilde;o recebeu um e-mail, verifique sua pasta de lixo eletr&ocirc;nico/spam. Se voc&ecirc; ainda n&atilde;o conseguir encontrar o e-mail de instru&ccedil;&otilde;es, escreva para events@mavie.global com a linha <br />de assunto: Dubai Leadership Event Issue <br /><br />O e-mail deve incluir: <br />- seu n&uacute;mero de usu&aacute;rio (ID) <br />- o endere&ccedil;o de e-mail conectado com o ID do usu&aacute;rio <br />- seu nome e sobrenome <br />- uma captura de tela do seu Back office &ldquo;Dubai Event Progress&rdquo;<br /><br /><br /></p>"        
+        },
+        "item6":{
+            "title": "Eu me classifiquei, mas não posso comparecer ao evento. Posso receber alguma outra recompensa pela qualificação?",
+            "content": "Não. A qualificação atua como um voucher exclusivo vinculado a uma única pessoa e só pode ser aplicado ou usado ao participar do Dubai Leadership Event."
+        },
+        "item7":{
+            "title": "Eu me qualifiquei, mas não posso comparecer ao evento. Posso transferir minha qualificação para outra pessoa?",
+            "content": "Não. A qualificação atua como um voucher exclusivo vinculado a uma única pessoa e só pode ser aplicado ou usado por essa pessoa ao participar do Dubai Leadership Event."
+        },
+        "item8":{
+            "title": "Qual é o local do evento e quando começa?",
+            "content": "<p>-Localiza&ccedil;&atilde;o: JW Marriott Marquis Hotel Dubai <br />-Endere&ccedil;o: Sheikh Zayed Road - Business Bay &ndash; Dubai <br />-Data: 11 de mar&ccedil;o de 2023 e 12 de mar&ccedil;o de 2023 <br />-Hor&aacute;rio: 10h00 &ndash; in&iacute;cio da programa&ccedil;&atilde;o do evento.<br /><br /><br /></p>"        
+        },
+        "item9":{
+            "title": "Onde posso encontrar mais informações sobre a agenda e programação do evento?",
+            "content": "Nos próximos dias começaremos a divulgar por e-mail e no site do evento mais informações, incluindo a agenda e a programação do Dubai Leadership Event."
+        },
+        "item10":{
+            "title": "Sou um membro MaVie, mas NÃO me qualifiquei para a promoção de Dubai. Ainda posso ir ao evento?",
+            "content": "<p>Reservamos um n&uacute;mero limitado de ingressos para o Dubai Leadership Event para os membros MaVie que n&atilde;o se qualificaram para a promo&ccedil;&atilde;o. O pre&ccedil;o do ingresso &eacute; US$199 (USDT) e pode ser adquirido enviando um e-mail para events@mavie.global com o <br />assunto: Dubai Leadership Event Tickets. <br /><br />O e-mail deve incluir: <br />- seu n&uacute;mero de usu&aacute;rio (ID) <br />- seu nome e sobrenome <br /><br />Voc&ecirc; receber&aacute; uma resposta por e-mail com instru&ccedil;&otilde;es sobre como comprar o ingresso. <br />O ingresso do evento d&aacute; acesso ao programa completo nos dias 11 e 12 de mar&ccedil;o, mas n&atilde;o inclui a Yacht Party e outras experi&ecirc;ncias em Dubai. <br /><br />Os ingressos est&atilde;o dispon&iacute;veis por ordem de chegada e duram apenas at&eacute; que a capacidade do evento seja atingida.<br /><br /></p>"        
+        },
+        "item11":{
+            "title": "Eu não sou um membro MaVie. Ainda posso participar do evento?",
+            "content": "<p>Reservamos um n&uacute;mero limitado de ingressos para o Dubai Leadership Event para l&iacute;deres que ainda n&atilde;o fazem parte da fam&iacute;lia MaVie. O pre&ccedil;o do ingresso &eacute; US$199 (USDT) e pode ser adquirido enviando um e-mail para events@mavie.global com o assunto: Dubai Leadership Event Tickets. <br /><br />O e-mail deve incluir: <br />- seu nome e sobrenome <br />- Nome e sobrenome e n&uacute;mero de usu&aacute;rio da pessoa que o convidou <br /><br />Voc&ecirc; receber&aacute; uma resposta por e-mail com instru&ccedil;&otilde;es sobre como comprar o ingresso. <br /><br />O ingresso do evento d&aacute; acesso completo ao evento nos dias 11 e 12 de mar&ccedil;o, mas n&atilde;o inclui a Yacht Party e outras experi&ecirc;ncias em Dubai. <br /><br />Os ingressos est&atilde;o dispon&iacute;veis por ordem de chegada e duram at&eacute; que a capacidade m&aacute;xima do evento seja atingida.<br /><br /></p>"        
+        },
+        "item12":{
+            "title": "Fui qualificado para a promoção de Dubai e gostaria de vir com pessoas que não fazem parte da MaVie. Isso é possível e como é o procedimento?",
+            "content": "<p>Reservamos um n&uacute;mero limitado de ingressos para o Dubai Leadership Event para pessoas que n&atilde;o fazem parte da fam&iacute;lia MaVie. O pre&ccedil;o do ingresso &eacute; US$199 (USDT) e pode ser adquirido enviando um e-mail para events@mavie.global com o assunto: Dubai Leadership Event Tickets. <br /><br />O e-mail deve incluir: <br />- seu nome e sobrenome <br />- seu n&uacute;mero de usu&aacute;rio (ID) <br />- nome e sobrenome do(s) seu(s) convidado(s) <br /><br />Voc&ecirc; receber&aacute; uma resposta por e-mail com instru&ccedil;&otilde;es sobre como comprar o ingresso. <br />O ingresso do evento d&aacute; acesso completo ao evento nos dias 11 e 12 de mar&ccedil;o, mas n&atilde;o inclui a Yacht Party e outras experi&ecirc;ncias em Dubai. <br /><br />Voc&ecirc; pode comprar ingressos para mais de 1 convidado. Os ingressos est&atilde;o dispon&iacute;veis por ordem de chegada e duram apenas at&eacute; que a capacidade do evento seja atingida.</p>"        
+        },
+        "item13":{
+            "title": "Posso obter um reembolso se comprei um ingresso para o evento e mudei de ideia sobre participar?",
+            "content": "Não, não é possível o reembolso dos ingressos adquiridos."
+        },
+        "item14":{
+            "title": "Existem transportes organizados para fazer o traslado dos participantes até o local do evento?",
+            "content": "Não, esteja ciente de que cada pessoa é responsável por organizar sua própria viagem e hospedagem; com base nisto, os organizadores do evento não providenciarão nenhum transporte."        },
+        "item15":{
+            "title": "Eu preciso de um VISTO. Posso receber um convite da empresa? Onde posso solicitar?",
+            "content": "No caso de quaisquer requisitos de VISTO, entre em contato com nossa equipe em events@mavie.global"
+        },
+        "item16":{
+            "title": "Quem posso contatar para mais informações sobre o evento?",
+            "content": "Não hesite em entrar em contato com nossa equipe em events@mavie.global"
+        }
+    },
+    "tier12": {
+        "item1": {
+            "title": "Conquistei o nível 2. Como posso reivindicar os passes Dubai Experience e Yacht Party?",
+            "content": "Devido à sua classificação, se você pagar a taxa de participação de segurança (as instruções estão na seção de perguntas frequentes acima), a experiência em Dubai e a festa no iate serão automaticamente incluídas em sua visita."
+        },
+        "item2": {
+            "title": "Se eu atingir o Nível 1 e/ou o Nível 2, posso participar nos dois dias do evento, 11 e 12 de março?",
+            "content": "Sim, o evento é nos dias 11 e 12 de março, e ambos os dias são para todos os membros qualificados de todos os quatro níveis."
+        }
+    },
+    "tier34": {
+        "item1": {
+            "title": "Devemos comprar passagens aéreas por conta própria? Onde podemos enviar um ticket para reembolso?",
+            "content": "<p>Voc&ecirc; deve comprar a passagem a&eacute;rea e seguir as instru&ccedil;&otilde;es para reembolso abaixo. <br /><br /> Observa&ccedil;&atilde;o: a empresa cobrir&aacute; passagens a&eacute;reas de at&eacute; US$800 (USDT) para qualificados de n&iacute;vel 3 e n&iacute;vel 4. <br /><br /> Aqui est&atilde;o os passos que voc&ecirc; deve seguir para obter o reembolso da sua passagem a&eacute;rea:</p><p class='pl-6'><span class='list-arrow'>Passo 1:</span> Prepare um comprovante da sua compra ou uma c&oacute;pia da sua passagem a&eacute;rea: <br /><br /><span class='list-arrow'>Passo 2:</span> Digitalize seu passaporte v&aacute;lido de forma que a imagem fique clara e leg&iacute;vel. <br /><br /><span class='list-arrow'>Passo 3:</span> Envie todos os documentos solicitados para events@mavie.global at&eacute; 3rd of March de 2023 &agrave;s 23:59 CET (hor&aacute;rio da Europa) <br /><br /> Qualquer pedido de reembolso de passagens a&eacute;reas ap&oacute;s 3rd of March, 23:59 CET (hor&aacute;rio da Europa), ser&aacute; rejeitado.</p>"        
+        },
+        "item2": {
+            "title": "Eu me qualifiquei para um reembolso de passagem aérea. Como acontece o reembolso?",
+            "content": "<p>A empresa cobrir&aacute; passagens a&eacute;reas de at&eacute; US$800 (USDT) para qualificados de N&iacute;vel 3 e N&iacute;vel 4. Para ter direito ao reembolso, ter&aacute; que enviar o comprovante da compra ou c&oacute;pia da passagem a&eacute;rea, juntamente com a digitaliza&ccedil;&atilde;o do seu passaporte, para events@mavie.global at&eacute; &agrave;s 23h59 CET de 3rd of March,2023. Qualquer solicita&ccedil;&atilde;o de reembolso de passagem a&eacute;rea ap&oacute;s essa data ser&aacute; rejeitada. O processo de reembolso da passagem a&eacute;rea ocorrer&aacute; entre os dias 17 e 24 de mar&ccedil;o de 2023. A passagem a&eacute;rea n&atilde;o ser&aacute; reembolsada caso voc&ecirc; n&atilde;o participe do evento.</p>"        
+        },
+        "item3": {
+            "title": "Eu me qualifiquei para ter hospedagem no hotel. O que devo fazer?",
+            "content": "<p>Antes de tudo, certifique-se de ter pago a taxa de participa&ccedil;&atilde;o de seguran&ccedil;a e de reservar sua passagem a&eacute;rea at&eacute; 3rd of March, 23:59 CET e ter enviado um e-mail (todas as instru&ccedil;&otilde;es est&atilde;o listadas acima) para events@mavie.global <br /><br />A equipe verificar&aacute; suas informa&ccedil;&otilde;es e finalizar&aacute; sua reserva de acomoda&ccedil;&atilde;o no hotel. Por favor, certifique-se de nos enviar uma c&oacute;pia do seu passaporte.</p>"        
+        },
+        "item4": {
+            "title": "No caso da qualificação de quarto de hotel é para 2 pessoas? Posso acomodar +1?",
+            "content": "Por favor, esteja ciente de que todos os quartos são para ocupação individual (para 1 pessoa)."
+        },
+        "item5": {
+            "title": "Se já estiver localizado em Dubai, posso ceder meu voo e/ou quarto para outra pessoa da minha equipe?",
+            "content": "Não, desculpe, esta opção não está disponível."
+        }
+    }
+}

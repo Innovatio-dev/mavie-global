@@ -1,0 +1,27 @@
+.container {
+    @apply lg:hidden;
+
+    .button {
+        @apply w-6 h-[19px] flex flex-col justify-between;
+    
+        .menuLines {
+            @apply w-full h-[2px] bg-white rounded-md transition-all duration-[350ms] ease-spring origin-left;
+        }
+    }
+    .containerOptions {
+        @apply w-full h-[calc(100vh-96px)] block bg-black absolute top-24 left-0;
+
+        ul {
+            @apply w-full flex flex-col justify-around;
+            min-height: calc(100% - 180px);
+
+            .link {
+                @apply w-full h-fit flex items-center gap-4 text-lg uppercase px-6;
+
+                span {
+                    @apply text-2xl text-brand-cyan;
+                }
+            }
+        }
+    }
+}

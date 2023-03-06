@@ -1,0 +1,8 @@
+{
+  "plugins": ["@typescript-eslint"],
+  "extends": ["standard", "plugin:@typescript-eslint/recommended", "next/core-web-vitals"],
+  "rules": {
+    "indent": [ "warn", 4 ],
+    "space-before-function-paren": "off"
+  }
+}

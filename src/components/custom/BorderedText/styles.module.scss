@@ -1,0 +1,56 @@
+.text, .duplicates {
+    text-transform: uppercase;
+    position: relative;
+
+    &::before, &::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 50%;
+        top: 0;
+        background-image: none;
+        background-clip: inherit;
+        color: white; /* Unfortunately you can't use transparent here … */
+        opacity: 0.5;
+        width: 100%;
+        z-index: 99;
+        text-shadow: 0px 0px 0 var(--brand-cyan), 0 0px 0 var(--brand-cyan), 0px 0 0 var(--brand-cyan), 0 0 0 var(--brand-cyan);
+        transform: translateX(-50%) translateY(3px) scale(0.995);
+    
+        /* Real outline for modern browsers */
+        @supports((text-stroke: 1.5px black) or (-webkit-text-stroke: 1.5px black)) {
+            color: transparent;
+            text-shadow: none;
+            -webkit-text-stroke: 1px var(--brand-cyan);
+            text-stroke: 1px var(--brand-cyan);
+        }
+    }
+
+    &::after {
+        opacity: 0.4;
+        text-shadow: 0px 0px 0 var(--brand-pink), 0 0px 0 var(--brand-pink), 0px 0 0 var(--brand-pink), 0 0 0 var(--brand-pink);
+        transform: translateX(-50%) translateY(6px) scale(0.990);
+    
+        /* Real outline for modern browsers */
+        @supports((text-stroke: 1.5px black) or (-webkit-text-stroke: 1.5px black)) {
+            color: transparent;
+            text-shadow: none;
+            -webkit-text-stroke: 1px var(--brand-pink);
+            text-stroke: 1px var(--brand-pink);
+        }
+    }
+
+    .content {
+        position: relative;
+        z-index: 100;
+    }
+}
+
+.duplicates {
+    position: absolute;
+    left: 0;
+    opacity: 0.4;
+    top: 0;
+    width: 100%;
+    transform: translateY(4px) scale(0.995);
+    z-index: 98;
+}

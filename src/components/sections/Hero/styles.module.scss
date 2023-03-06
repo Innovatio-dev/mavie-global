@@ -1,0 +1,101 @@
+.container {
+    @apply w-full min-h-[calc(100vh+1rem)] bg-black -mb-20 overflow-hidden relative;
+    &::after {
+        @apply w-full h-28 bg-black-bottom-gradient absolute bottom-0 z-20;
+        content: '';
+    }
+
+    .logo {
+        @apply w-full max-w-[120rem] min-h-screen absolute bottom-0 4xl:bottom-40 left-1/2 -translate-x-1/2 origin-left  z-0;
+        transition: opacity 1s ease;
+        animation: fadeIn 0.5s ease-in-out;
+
+        img {
+            @apply object-contain;
+        }
+    }
+
+    .glow {
+        @apply w-full min-h-screen absolute bottom-0 left-1/2 -translate-x-1/2 z-10 mix-blend-lighten;
+        animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+        img {
+            @apply object-cover;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: .5;
+            }
+        }
+    }
+
+    .city {
+        @apply h-full object-cover absolute -bottom-28 z-20 4xl:w-full transition-[filter];
+        animation: filter 3s ease-in-out 2s;
+    }
+
+    .content {
+        @apply mt-28 lg:mt-48 flex flex-col items-center relative z-20;
+        transition: opacity 1s ease;
+        animation: fadeIn 0.7s ease-in-out;
+
+        p {
+            @apply text-xl md:text-3xl font-dm font-bold tracking-wide;
+        }
+
+        .containerTitle {
+            @apply w-full relative font-semibold tracking-wide text-center leading-none;
+
+            h1 {
+                @apply text-5xl md:text-6xl lg:text-[5.5rem] bg-clip-text text-transparent bg-main-gradient;
+            }
+        }
+
+        .mouseElement {
+            @apply mt-3;
+
+            .path {
+                @apply flex flex-col items-center gap-[2px];
+
+                span:first-child, span:last-child {
+                    @apply w-[2px] h-1 bg-brand-gray rounded;
+                }
+
+                span:nth-child(2) {
+                    @apply w-[2px] h-2 bg-brand-gray rounded;
+                }
+            }
+
+            .mouse {
+                @apply w-5 h-8 flex justify-center bg-black border-2 border-brand-gray rounded-xl animate-bounce;
+                span {
+                    @apply w-[2px] h-2 bg-brand-gray rounded mt-1;
+                }
+            }
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            scale: 0.8;
+        }
+        100% {
+            opacity: 1;
+            scale: 1;
+        }
+    }
+
+    @keyframes filter {
+        0% {
+            filter: saturate(0);
+        }
+        100% {
+            filter: saturate(1);
+        }
+    }
+}
