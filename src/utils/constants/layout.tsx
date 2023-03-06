@@ -2,23 +2,23 @@ import { HiOutlineChatBubbleOvalLeft, HiOutlineClipboard, HiOutlineDocumentText,
 
 export const NAVIGATION_LINKS = [
     {
-        name: 'details',
-        to: '#details',
+        name: 'what is mavie?',
+        to: '#what-is-mavie',
         icon: <HiOutlineClipboard />
     },
     {
-        name: 'program',
-        to: '#program',
+        name: 'why mavie?',
+        to: '#why-mavie',
         icon: <HiOutlineDocumentText />
     },
     {
-        name: 'speakers',
-        to: '#speakers',
+        name: 'team',
+        to: '#team',
         icon: <HiOutlineMicrophone />
     },
     {
-        name: 'why attend?',
-        to: '#why-attend',
+        name: 'contact us',
+        to: '#contact-us',
         icon: <HiOutlineChatBubbleOvalLeft />
     }
 ]

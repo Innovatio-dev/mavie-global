@@ -1,6 +1,3 @@
-
-import Countdown from '@/components/shared/Countdown'
-import getEventDate from '@/utils/constants/eventDate'
 import { networks } from '@/utils/constants/networks'
 import { Controls, Player } from '@lottiefiles/react-lottie-player'
 import { motion } from 'framer-motion'
@@ -130,7 +127,6 @@ export default function BigCounter() {
                 <Link href='https://www.backoffice.mavie.global' target='_blank'>Backoffice</Link>
                 <Link href='/terms-and-conditions'>Terms of use </Link>
                 <Link href='/privacy-policy'>Privacy policy</Link>
-                <Link href='/dubai-faq'>Dubai FAQ</Link>
             </div>
             <div className={styles.copyright}>
                 © 2022 MaVie Global. All Rights Reserved.
