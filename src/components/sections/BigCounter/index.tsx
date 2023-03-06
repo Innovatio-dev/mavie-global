@@ -74,7 +74,7 @@ export default function BigCounter() {
 
                 </motion.div>
                 <div className={styles.imageContainer}>
-                    <Image style={{ objectFit: 'contain' }} fill src='/assets/images/1103_footer.webp' alt="event date"/>
+                    <Image style={{ objectFit: 'contain' }} fill src='/assets/svg/outlined_logo.svg' alt="event date"/>
                 </div>
                 <motion.div className={styles.darkCircle}
                     transition= {{ duration: 1 }}
@@ -91,10 +91,11 @@ export default function BigCounter() {
             >
                 <h3> All for One</h3>
                 <h2 className={styles.counterContainer}>
-                    <Countdown targetDate={getEventDate()}/>
+                    {/* <Countdown targetDate={getEventDate()}/> */}
+                    Stay tuned.
                 </h2>
                 <div className={styles.message}>
-                    See you soon
+                    Follow us on our socials
                 </div>
 
                 <div className={styles.networks}>
