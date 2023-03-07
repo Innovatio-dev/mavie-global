@@ -3,13 +3,13 @@ import Image from 'next/image'
 import { useRef, useState } from 'react'
 // Components
 import Borderedtext from '@/components/custom/BorderedText'
+import IconScroll from '@/components/shared/IconScroll'
 // Framer Motion
 import { useMotionValueEvent, useScroll } from 'framer-motion'
 // Layout
 import InnerContainer from '@/layouts/InnerContainer'
 // Styles
 import styles from './styles.module.scss'
-import IconScroll from '@/components/shared/IconScroll'
 
 export default function Hero() {
     const heroRef = useRef<HTMLElement>(null)
@@ -45,12 +45,22 @@ export default function Hero() {
     return (
         <section ref={heroRef} className={styles.container}>
             <div style={{ transform: `scale(${logoAnimation.scale}) translateX(-50%)`, opacity: `${logoAnimation.opacity}` }} className={styles.logo}>
-                <Image src='/assets/images/3d-mavie.webp' alt='Dubai' fill priority/>
+                <Image src='/assets/images/3d-mavie.png' alt='Dubai' fill priority unoptimized/>
             </div>
             <div className={styles.glow}>
                 <Image src='/assets/images/glow.webp' alt='Dubai' fill priority/>
             </div>
-            <Image src='/assets/images/dubaiphoto.png' unoptimized alt='Dubai' width={2560} height={1227.8} priority className={styles.city}/>
+            <Image
+                src='/assets/images/dubaiphoto.png'
+                blurDataURL='iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAAqgAwAEAAAAAQAAAAUAAAAAShJCJwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAVlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDYuMC4wIj4KICAgPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KGV7hBwAAAMNJREFUCB1jYICC/w0NTHD2/v0scDZUnLGBIZStgWH1L5BEhHJ1oFl22UG2798Nf708q3qNReLLnD7jJf8ZGJgZN6ctmsvCwSMlJ/Hv+IK9lxK0pI0fsUvLqDx58+wm50eGu9acT1cevPpoBssrhn8JGqz/mf5//uch8fXXfxnWp4r//nMxKIsxiGlpfTY9f/dv6mMTHQbmTWff1H45/u4393OOf1mXF/23ldT7w6Ng+pdNSJxRWfAlm4wu/5/PB67/AgB6z1EQVczd1gAAAABJRU5ErkJggg=='
+                placeholder='blur'
+                unoptimized
+                alt='Dubai'
+                width={2560}
+                height={1227.8}
+                priority
+                className={styles.city}
+            />
             <InnerContainer>
                 <div style={{ transform: `scale(${titleAnimation.scale})`, opacity: `${titleAnimation.opacity}` }} className={styles.content}>
                     <p className='uppercase'>
@@ -65,7 +75,6 @@ export default function Hero() {
                         {'with mavie'}
                     </p>
                     <IconScroll/>
-                    {/* <Image src='/assets/images/mouse.png' alt='Mouse' width={35} height={40} priority className='mt-4'/> */}
                 </div>
             </InnerContainer>
         </section>
