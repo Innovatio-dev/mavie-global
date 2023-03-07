@@ -5,7 +5,7 @@ import Image from 'next/image'
 // Framer motion
 import { motion as m, AnimatePresence } from 'framer-motion'
 // Icons
-import { HiOutlineQuestionMarkCircle } from 'react-icons/hi2'
+import { HiOutlineChartBarSquare } from 'react-icons/hi2'
 // Utils
 import { NAVIGATION_LINKS } from '@/utils/constants/layout'
 // Styles
@@ -40,7 +40,7 @@ const Menu = ({ isOpen, onClick }: { isOpen: boolean, onClick: (to: string) => v
                         ))
                     }
                     <li>
-                        <Link href='/dubai-faq' className={styles.link}><span><HiOutlineQuestionMarkCircle /></span>Dubai FAQ</Link>
+                        <Link href='https://www.backoffice.mavie.global' target='_blank' className={styles.link}><span><HiOutlineChartBarSquare /></span>Backoffice</Link>
                     </li>
                 </ul>
             </m.div>

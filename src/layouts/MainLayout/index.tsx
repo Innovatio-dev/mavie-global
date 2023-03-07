@@ -45,8 +45,7 @@ function Header() {
                             <Image src='/assets/images/logo.webp' alt='Mavie global' priority fill className='object-contain' />
                         </div>
                         <div className='hidden lg:flex flex-col text-sm uppercase'>
-                            <span>DUBAI LEADERSHIP EVENT</span>
-                            <span>10. - 13. march 2023 • dubai</span>
+                            <span>ALL FOR ONE</span>
                         </div>
                     </Link>
                     <div className='hidden lg:flex items-center gap-5'>
@@ -60,7 +59,7 @@ function Header() {
                                 >{ name }</button>
                             ))
                         }
-                        <Link href='/dubai-faq' className='text-sm uppercase hover:text-brand-pink transition-all ease-in-out'>DUBAI FAQ</Link>
+                        <Link href='https://www.backoffice.mavie.global' target='_blank' className='text-sm uppercase hover:text-brand-pink transition-all ease-in-out'>Backoffice</Link>
                         <CallToAction />
                     </div>
                     <MobileMenu onClick={(to) => handleClick(to)} />
