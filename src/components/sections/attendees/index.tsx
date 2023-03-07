@@ -156,7 +156,7 @@ export default function AttendeesSection() {
                 viewport={{ once: true }}
                 initial={'hidden'}
                 whileInView={'visible'}
-                className='uppercase text-4xl md:text-6xl max-w-3xl font-[600] tracking-[0.115em]' >WHAT ATTENDEES SAY ABOUT <span className={styles.coloredText}>mavie</span></motion.h2>
+                className='uppercase text-4xl md:text-6xl max-w-4xl font-[600] tracking-[0.115em]' >{'WHAT does our users SAY ABOUT'} <span className={styles.coloredText}>mavie</span></motion.h2>
             {currentWidth < 640 && <motion.div
                 variants={nothing}
                 initial={'hidden'}

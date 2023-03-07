@@ -47,7 +47,7 @@ export default function Speakers () {
                     initial={'hidden'}
                     whileInView={'visible'}
                 >
-                    {'event 2023 Speakers'}
+                    {'mavie team'}
                 </motion.h2>
                 <motion.div
                     className='w-full flex flex-col items-center text-center gap-2 text-xl font-dm font-light leading-[1.2]'
@@ -55,8 +55,7 @@ export default function Speakers () {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                 >
-                    <p>{'An unparalleled lineup of leaders has come to share the future of WEB3.'}</p>
-                    <p className='max-w-[43rem] text-center'>{'They will present the vision, the revolutionary ideas, and the latest news from the ecosystem'}</p>
+                    <p className='max-w-[55rem] text-center'>{'Meet the exceptional team behind MaVie, committed to creating a dynamic and engaged community that empowers individuals to achieve their dreams and live their best lives.'}</p>
                 </motion.div>
             </div>
             <div ref={carouselContainer} className="w-full min-h-[10rem] bg-purple-gradient flex justify-center py-10 shadow-card-container">

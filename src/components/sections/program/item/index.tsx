@@ -23,7 +23,7 @@ export default function Item(props: IItemProps) {
         </div>
         <div className={styles.contextual}>
             <div className={styles.background}
-                style={{ background: `linear-gradient(90deg, ${props.startColor}, ${props.endColor})` }}
+                style={{ background: `linear-gradient(180deg, ${props.startColor}, ${props.endColor})` }}
             ></div>
             <div className={styles.title}>{props.title}</div>
             <div className={styles.subtitle}>{props.subtitle}</div>

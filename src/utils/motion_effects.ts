@@ -14,6 +14,24 @@ export const slideLeft = {
         y: 0
     }
 }
+
+export const slideUp = {
+    visible: (i = 0) => ({
+        opacity: 1,
+        x: 0,
+        y: 0,
+        transition: {
+            delay: i * 0.1,
+            type: 'easeIn'
+        }
+    }),
+    hidden: {
+        opacity: 0,
+        x: 0,
+        y: 100
+    }
+}
+
 export const zoomOut = {
     visible: {
         opacity: 1,

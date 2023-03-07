@@ -17,24 +17,16 @@ const NewsLetter = () => {
             id="newsletter"
             onViewportEnter={handleInView}
             onViewportLeave={handleOutView}
-            className="flex flex-col w-full min-h-screen bg-news bg-center lg:bg-cover bg-no-repeat items-center justify-center text-center -mb-36 lg:-mb-48"
+            className="flex flex-col w-full min-h-screen bg-news bg-center lg:bg-cover bg-no-repeat items-center justify-center text-center"
         >
             <div>
-                <motion.h3
-                    transition={{ duration: 1 }}
-                    initial={{ y: -150, opacity: 0, scale: 1.8 }}
-                    whileInView={{ y: 0, opacity: 1, scale: 1 }}
-                    className="text-transparent bg-clip-text font-medium text-xl lg:text-3xl xl:text-4xl bg-main-gradient max-w-fit mx-auto"
-                >
-                    All for One
-                </motion.h3>
                 <motion.h2
                     transition={{ duration: 1 }}
                     initial={{ y: 150, opacity: 0, scale: 1.8 }}
                     whileInView={{ y: 0, opacity: 1, scale: 1 }}
                     className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[10rem] mb-16 lg:mb-6 leading-none w-[80%] lg:w-full mx-auto"
                 >
-                    90% of seats taken
+                    There is more..
                 </motion.h2>
                 <motion.h3
                     transition={{ duration: 1 }}
@@ -42,7 +34,15 @@ const NewsLetter = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     className="max-w-[320px] font-light lg:max-w-[1080px] text-2xl lg:text-3xl xl:text-4xl mx-auto"
                 >
-                    There&apos;s a limited amount of seats left for the Dubai Leadership Event.<br /> You can apply for a seat below.
+                    Reserve your seat for our next MaVie event in 2023
+                </motion.h3>
+                <motion.h3
+                    transition={{ duration: 1 }}
+                    initial={{ y: 150, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    className="max-w-[320px] font-light lg:max-w-[1080px] text-2xl lg:text-3xl xl:text-4xl mx-auto"
+                >
+                    Subscribe and stay ahead of the curve
                 </motion.h3>
             </div>
             <motion.div
@@ -57,16 +57,16 @@ const NewsLetter = () => {
                 <motion.div
                     transition={{ duration: 1.5 }}
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 0.6 }}
-                    className="md:block absolute hidden w-[40vw] md:w-[45vw] md:h-[30vh] h-[45vh] 2xl:h-[50vh] right-0 bottom-0"
+                    whileInView={{ opacity: 0.9 }}
+                    className="md:block absolute hidden w-[40vw] md:w-[50vw] md:h-[30vh] h-[45vh] 2xl:h-[70vh] right-0 top-[25%] "
                 >
                     <Image src="/assets/images/diamond_left.png" alt="diamond" fill />
                 </motion.div>
                 <motion.div
                     transition={{ duration: 1.5 }}
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 0.6 }}
-                    className="md:block absolute hidden w-[40vw] md:w-[45vw] md:h-[30vh] h-[45vh] 2xl:h-[50vh] left-0 bottom-0"
+                    whileInView={{ opacity: 0.9 }}
+                    className="md:block absolute hidden w-[40vw] md:w-[50vw] md:h-[30vh] h-[45vh] 2xl:h-[70vh] -left-48 top-[25%]"
                 >
                     <Image src="/assets/images/diamond_right.png" alt="diamond" fill />
                 </motion.div>
