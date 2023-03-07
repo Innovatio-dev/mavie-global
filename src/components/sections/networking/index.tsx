@@ -36,7 +36,7 @@ const Networking = () => {
                 </motion.div>
             </div>
             <div className='flex items-center absolute w-full lg:right-0 lg:w-[75%] h-[600px]'>
-                <div className='hidden lg:flex w-full lg:h-fit xl:h-[350px] 3xl:justify-start 3xl:pl-32 bg-box-gradient justify-center xl:mt-20'>
+                <div className='hidden lg:flex w-full lg:h-fit xl:h-[350px] bg-box-gradient justify-center xl:mt-20'>
                     <i className='relative w-[150px] h-[150px] md:left-0 lg:top-32 lg:left-[30rem] xl:-top-16 xl:left-[42rem]'>
                         <Image src="/assets/images/wine.webp" alt="arrow" fill className='object-contain' />
                     </i>
