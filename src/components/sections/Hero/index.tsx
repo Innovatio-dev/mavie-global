@@ -53,11 +53,17 @@ export default function Hero() {
             <Image src='/assets/images/dubaiphoto.png' unoptimized alt='Dubai' width={2560} height={1227.8} priority className={styles.city} sizes="(max-width: 768px) 200vw"/>
             <InnerContainer>
                 <div style={{ transform: `scale(${titleAnimation.scale})`, opacity: `${titleAnimation.opacity}` }} className={styles.content}>
-                    <p className='uppercase'>10. - 13. March 2023</p>
+                    <p className='uppercase'>
+                        {'success runs in the family'}
+                    </p>
                     <div className={styles.containerTitle}>
-                        <Borderedtext duplicate className='text-5xl md:text-6xl lg:text-[5.5rem] 4xl:text-[7rem] bg-clip-text text-transparent bg-main-gradient'>Experience the unexpected</Borderedtext>
+                        <Borderedtext duplicate className='text-5xl md:text-6xl lg:text-[5.5rem] 4xl:text-[7rem] bg-clip-text text-transparent bg-main-gradient'>
+                            {'own your future'}
+                        </Borderedtext>
                     </div>
-                    <p className='uppercase'>Dubai Leadership Event</p>
+                    <p className='uppercase'>
+                        {'with mavie'}
+                    </p>
                     <IconScroll/>
                     {/* <Image src='/assets/images/mouse.png' alt='Mouse' width={35} height={40} priority className='mt-4'/> */}
                 </div>

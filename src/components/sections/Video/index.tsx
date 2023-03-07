@@ -47,7 +47,7 @@ export default function Video () {
 
                 </div>
             </motion.div>
-            <div className= 'flex justify-between flex-wrap md:flex-nowrap gap-3 md:gap-0 md:flex-row md:overflow-visible overflow-hidden md:rounded-none rounded-md'>
+            <div className= 'flex justify-between flex-wrap lg:flex-nowrap gap-3 lg:gap-0 md:flex-row md:overflow-visible overflow-hidden md:rounded-none rounded-md'>
                 {CARDS.map((card, i) => {
                     return <CounterCard key={card.label} id={i} amount={card.amount} label={card.label}/>
                 })}

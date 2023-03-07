@@ -56,10 +56,12 @@ export default function Program() {
                     variants={zoomIn}
                     initial={'hidden'}
                     whileInView={'visible'}
-                    className='uppercase text-4xl md:text-6xl font-medium text-center tracking-[0.115em]'>
-                        Explore the program
+                    className='uppercase text-4xl md:text-6xl font-medium text-center tracking-[0.115em] max-w-[1200px]'>
+                    {'Unleash your full potential with MaVie'}
                 </motion.h2>
-                <h3 className='uppercase text-center mt-4 mb-8 text-lg md:text-2xl font-light tracking-widest'> It&apos;s like 7 events in one</h3>
+                <h3 className='text-center mt-4 mb-8 text-lg md:text-2xl font-light tracking-widest max-w-[1400px]'>
+                    {'MaVie empowers you to unlock your true potential and succeed by providing expertly curated resources tailored to your personal and professional growth'}
+                </h3>
                 <motion.div className={styles.list} variants={zoomOut} initial={'hidden'} whileInView={'visible'}>
                     {entries.map((item, index) =>
                         <motion.div key={index} custom={index} variants={slideLeft} >
