@@ -50,7 +50,7 @@ export default function Hero() {
             <div className={styles.glow}>
                 <Image src='/assets/images/glow.webp' alt='Dubai' fill priority/>
             </div>
-            <Image src='/assets/images/dubaiphoto.png' unoptimized alt='Dubai' width={2560} height={1227.8} priority className={styles.city} sizes="(max-width: 768px) 200vw"/>
+            <Image src='/assets/images/dubaiphoto.png' unoptimized alt='Dubai' width={2560} height={1227.8} priority className={styles.city}/>
             <InnerContainer>
                 <div style={{ transform: `scale(${titleAnimation.scale})`, opacity: `${titleAnimation.opacity}` }} className={styles.content}>
                     <p className='uppercase'>10. - 13. March 2023</p>

@@ -2,15 +2,16 @@
 import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+// Components
+import OutlineLogo from '@/components/shared/OutlineLogo'
+// Context
+import { useMenu } from '@/context/Menu'
 // Framer motion
 import { motion as m, AnimatePresence } from 'framer-motion'
-// Icons
-import { HiOutlineChartBarSquare } from 'react-icons/hi2'
 // Utils
 import { NAVIGATION_LINKS } from '@/utils/constants/layout'
 // Styles
 import styles from './styles.module.scss'
-import { useMenu } from '@/context/Menu'
 
 const Menu = ({ isOpen, onClick }: { isOpen: boolean, onClick: (to: string) => void }) => (
     <AnimatePresence>
@@ -40,7 +41,7 @@ const Menu = ({ isOpen, onClick }: { isOpen: boolean, onClick: (to: string) => v
                         ))
                     }
                     <li>
-                        <Link href='https://www.backoffice.mavie.global' target='_blank' className={styles.link}><span><HiOutlineChartBarSquare /></span>Backoffice</Link>
+                        <Link href='https://www.backoffice.mavie.global' target='_blank' className={styles.link}><span className='w-5 h-5'><OutlineLogo /></span>Backoffice</Link>
                     </li>
                 </ul>
             </m.div>
