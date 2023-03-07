@@ -1,4 +1,5 @@
-import { HiOutlineChatBubbleOvalLeft, HiOutlineClipboard, HiOutlineDocumentText, HiOutlineMicrophone } from 'react-icons/hi2'
+import { AiOutlineTeam } from 'react-icons/ai'
+import { HiOutlineChatBubbleOvalLeft, HiOutlineClipboard, HiOutlineDocumentText } from 'react-icons/hi2'
 
 export const NAVIGATION_LINKS = [
     {
@@ -14,7 +15,7 @@ export const NAVIGATION_LINKS = [
     {
         name: 'team',
         to: '#team',
-        icon: <HiOutlineMicrophone />
+        icon: <AiOutlineTeam />
     },
     {
         name: 'contact us',

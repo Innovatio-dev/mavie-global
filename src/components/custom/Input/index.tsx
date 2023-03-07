@@ -55,7 +55,7 @@ const Input = ({
                     </div>
                     : <div>
                         <form onSubmit={handleSubmit}>
-                            <p className="my-2 italic">Apply for your seat</p>
+                            <p className="my-2 italic">Reserve your seat now</p>
                             <input
                                 type='email'
                                 name='email'
