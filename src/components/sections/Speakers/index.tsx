@@ -38,7 +38,7 @@ export default function Speakers () {
         }
     }, [])
 
-    return <section id='speakers' className='h-auto flex justify-center'>
+    return <section id='team' className='h-auto flex justify-center'>
         <div className='flex flex-col items-center gap-10 py-10 w-full '>
             <div className= 'flex flex-col items-center gap-5 px-5'>
                 <motion.h2
@@ -55,7 +55,7 @@ export default function Speakers () {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                 >
-                    <p className='max-w-[55rem] text-center'>{'Meet the exceptional team behind MaVie, committed to creating a dynamic and engaged community that empowers individuals to achieve their dreams and live their best lives.'}</p>
+                    <p className='max-w-[55rem] text-center'>{'Meet th-e exceptional team behind MaVie, committed to creating a dynamic and engaged community that empowers individuals to achieve their dreams and live their best lives.'}</p>
                 </motion.div>
             </div>
             <div ref={carouselContainer} className="w-full min-h-[10rem] bg-purple-gradient flex justify-center py-10 shadow-card-container">
