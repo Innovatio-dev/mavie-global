@@ -32,8 +32,8 @@ const WelcomeDubai = () => {
                     reverse={false}
                     title="Mavie Vision"
                     subTitle="Road to 100M"
-                    content1="Built on strong fundamentals and guided by a clear long-term strategy, <strong>MaVie’s grand vision</strong> will position the company as one of the most prominent leaders in the WEB3."
-                    content2=""
+                    content1="Built on strong fundamentals and guided by a clear long-term strategy, MaVie’s grand vision will position the company as one of the most prominent leaders in the WEB3."
+                    content2="Community building is a critical aspect of MaVie's user acquisition strategy. Therefore the company is creating a constant vibrant and engaged community around its platform, giving sense of belonging and ownership among its users. It incentivise user engagement through rewards programs, referral programs, and other creative initiatives."
                     img="/assets/images/welcome1.png"
                     leftBottom={false}
                     leftTop
