@@ -1,25 +1,40 @@
 import ContactForm from '@/components/custom/ContactForm'
 import HoverBox from '@/components/custom/HoverBox'
-import { slideUp } from '@/utils/motion_effects'
-import { motion } from 'framer-motion'
+import { useState } from 'react'
 
-const entries = [
+const item = [
     {
         title: 'Help & Support',
         icon: 'icon1',
-        content: '',
-        startColor: '',
-        endColor: ''
+        content: 'Need help?</br>Contact our support team',
+        startColor: '#29808F',
+        endColor: '#4112A200'
     }, {
         title: 'Media & Events',
         icon: 'icon2',
-        content: '',
-        startColor: '',
-        endColor: ''
+        content: 'Questions about organising or </br> attending a MaVie event?',
+        startColor: '#E14696',
+        endColor: '#4112A200'
     }
 ]
 
 const ContactUs = () => {
+    const [mavieId, setMavieId] = useState<boolean>(false)
+    const [listId, setListId] = useState<number>(68)
+
+    const toggleHelp = () => {
+        setMavieId(true)
+        setListId(68)
+        console.log(mavieId)
+        console.log(listId)
+    }
+
+    const toggleMedia = () => {
+        setMavieId(false)
+        setListId(69)
+        console.log(mavieId)
+        console.log(listId)
+    }
     return (
         <section className='flex flex-col'>
             <div className='flex flex-col text-center mx-auto py-[100px] w-full h-fit bg-black'>
@@ -29,16 +44,22 @@ const ContactUs = () => {
             </div>
             <div className='flex flex-col items-center justify-start w-full h-[350px] bg-purple-gradient'>
                 <p className='text-transparent bg-clip-text bg-main-gradient text-2xl py-6'>I&apos;m interested in...</p>
-                <div className='flex flex-col lg:flex-row'>
-                    {entries.map((item, index) =>
-                        <motion.div key={index} custom={index} variants={slideUp} >
-                            <HoverBox {...item} />
-                        </motion.div>
-                    )}
+                <div className='flex flex-row'>
+                    <HoverBox
+                        {...item[0]}
+                        onClick={toggleHelp}
+                        active={mavieId} />
+                    <HoverBox
+                        {...item[1]}
+                        onClick={toggleMedia}
+                        active={!mavieId}/>
                 </div>
             </div>
             <div className='flex w-full h-[800px]'>
-                <ContactForm/>
+                {mavieId
+                    ? <ContactForm mavieId={mavieId} listId={listId}/>
+                    : <ContactForm mavieId={mavieId} listId={listId}/>
+                }
             </div>
         </section>
     )

@@ -25,10 +25,10 @@ module.exports = {
                 'box-gradient': 'var(--box-gradient)',
                 'black-top-gradient': 'var(--black-top-gradient)',
                 'black-bottom-gradient': 'var(--black-bottom-gradient)',
-                'news': 'linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(5,5,62,0) 40%, rgba(0,0,0,0.7) 89%),url("/assets/images/bgnews2.png"), url("/assets/images/news.webp")',
-                'dubaiw': 'linear-gradient(90deg, rgba(17, 17, 17, 0) 0%, #191A2C 50.52%, rgba(17, 17, 17, 0) 100%)',
-                'lines': 'linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(5,5,62,0) 100%, rgba(0,0,0,0.7) 99%), url("/assets/images/texture_right_lines.webp")',
-                'blue-gradient': 'linear-gradient(180deg, rgba(70, 225, 252, 0) 0%, #29808F 100%)'
+                'blue-gradient': 'linear-gradient(180deg, rgba(70, 225, 252, 0) 0%, #29808F 100%)',
+                news: 'linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(5,5,62,0) 40%, rgba(0,0,0,0.7) 89%),url("/assets/images/bgnews2.png"), url("/assets/images/news.webp")',
+                dubaiw: 'linear-gradient(90deg, rgba(17, 17, 17, 0) 0%, #191A2C 50.52%, rgba(17, 17, 17, 0) 100%)',
+                lines: 'linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(5,5,62,0) 100%, rgba(0,0,0,0.7) 99%), url("/assets/images/texture_right_lines.webp")'
             },
             boxShadow: {
                 card: 'var(--shadow-card)',
