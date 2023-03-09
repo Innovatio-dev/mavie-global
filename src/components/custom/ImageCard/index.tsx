@@ -17,12 +17,12 @@ type ImageCardProps = {
 
 const ImageCard: React.FC<ImageCardProps> = ({ title, subTitle, content1, content2, img, reverse, leftBottom, leftTop, right }) => {
     return (
-        <div className={`flex items-start justify-center ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} flex-col w-full min-h-fit md:my-6 lg:my-16`}>
+        <div className={`flex items-center justify-center ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} flex-col w-full min-h-fit md:my-6 lg:my-16`}>
             <motion.div
                 transition={{ duration: 0.7 }}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                className='flex w-full h-[280px] xl:h-[400px] max-w-[800px] object-contain relative'>
+                className='flex w-full h-[300px] xl:h-[400px] max-w-[800px] object-contain relative'>
                 <Image src={img} alt={img} fill className='object-scale-down' sizes="(max-width: 768px) 100vw" />
                 {leftTop &&
                     <Parallax speed={-2} rotate={[-45, 0]} >
@@ -49,13 +49,13 @@ const ImageCard: React.FC<ImageCardProps> = ({ title, subTitle, content1, conten
                 transition={{ duration: 0.7 }}
                 initial={{ x: -30, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                className={`w-[95%] xl:w-1/2 h-full flex flex-col xl:max-w-[600px] lg:pt-6 md:pt-12 ${reverse ? 'lg:ml-16 xl:ml-28' : 'lg:mr-16 xl:mr-28'}`}>
+                className={`w-[95%] xl:w-2/3 h-full flex flex-col xl:max-w-[800px] lg:pt-6 md:pt-12 mx-auto ${reverse ? 'md:pl-12' : 'lg:pl-12 xl:pl-6'}`}>
                 <h4 className='text-md lg:text-4xl font-thin uppercase'>{title}</h4>
                 <Parallax translateX={[-8, 0]} translateY={[0, 0]} speed={100}>
-                    <div className="flex flex-col pl-4 px-6">
-                        <h3 className='text-4xl lg:text-5xl uppercase font-thin italic lg:mb-10'>{subTitle}</h3>
-                        <p className='text-lg py-2' dangerouslySetInnerHTML={{ __html: content1 }} />
-                        <p className='text-lg pb-12' dangerouslySetInnerHTML={{ __html: content2 }} />
+                    <div className="flex flex-col">
+                        <h3 className='text-4xl lg:text-5xl uppercase font-thin italic lg:mb-2'>{subTitle}</h3>
+                        <p className='text-lg py-2 font-thin' dangerouslySetInnerHTML={{ __html: content1 }} />
+                        <p className='text-lg pb-12 font-thin' dangerouslySetInnerHTML={{ __html: content2 }} />
                         <div className='hidden lg:block w-fit mx-auto lg:ml-0'>
                             <CallToAction />
                         </div>

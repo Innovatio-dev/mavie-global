@@ -35,12 +35,13 @@ const ContactUs = () => {
         console.log(mavieId)
         console.log(listId)
     }
+
     return (
         <section className='flex flex-col'>
             <div className='flex flex-col text-center mx-auto py-[100px] w-full h-fit bg-black'>
-                <h2 className='text-7xl uppercase max-w-[700px] mx-auto'>Contact Us</h2>
-                <p className='font-thin max-w-[700px] mx-auto'>If you have any questions or concerns, please don&apos;t hesitate to contact us.</p>
-                <p className='font-thin max-w-[700px] mx-auto'>We&apos;re always happy to help in any way we can.</p>
+                <h2 className='text-6xl lg:text-7xl uppercase max-w-[700px] lg:mx-auto mx-4'>Contact Us</h2>
+                <p className='font-thin max-w-[700px] lg:mx-auto mx-4'>If you have any questions or concerns, please don&apos;t hesitate to contact us.</p>
+                <p className='font-thin max-w-[700px] lg:mx-auto mx-4'>We&apos;re always happy to help in any way we can.</p>
             </div>
             <div className='flex flex-col items-center justify-start w-full h-[350px] bg-purple-gradient'>
                 <p className='text-transparent bg-clip-text bg-main-gradient text-2xl py-6'>I&apos;m interested in...</p>
@@ -55,7 +56,7 @@ const ContactUs = () => {
                         active={!mavieId}/>
                 </div>
             </div>
-            <div className='flex w-full h-[800px]'>
+            <div className='flex w-full min-h-[800px]'>
                 {mavieId
                     ? <ContactForm mavieId={mavieId} listId={listId}/>
                     : <ContactForm mavieId={mavieId} listId={listId}/>
