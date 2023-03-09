@@ -57,18 +57,18 @@ const NewsLetter = () => {
                 <motion.div
                     transition={{ duration: 1.5 }}
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 0.9 }}
-                    className="md:block absolute hidden w-[40vw] md:w-[50vw] md:h-[30vh] h-[45vh] 2xl:h-[70vh] right-0 top-[25%] "
+                    whileInView={{ opacity: 0.75 }}
+                    className="md:block absolute hidden w-[42vw] h-[60vh] right-0 top-[30%]"
                 >
-                    <Image src="/assets/images/diamond_left.png" alt="diamond" fill />
+                    <Image src="/assets/images/diamond_right.png" alt="diamond" fill />
                 </motion.div>
                 <motion.div
                     transition={{ duration: 1.5 }}
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 0.9 }}
-                    className="md:block absolute hidden w-[40vw] md:w-[50vw] md:h-[30vh] h-[45vh] 2xl:h-[70vh] -left-48 top-[25%]"
+                    whileInView={{ opacity: 0.75 }}
+                    className="md:block absolute hidden w-[42vw] h-[60vh] left-0 top-[30%]"
                 >
-                    <Image src="/assets/images/diamond_right.png" alt="diamond" fill />
+                    <Image src="/assets/images/diamond_left.png" alt="diamond" fill />
                 </motion.div>
             </div>
         </motion.section>

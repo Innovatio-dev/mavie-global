@@ -26,7 +26,7 @@ const WelcomeDubai = () => {
                     <Image src="/assets/images/texture_right_lines.webp" fill alt="image" className="object-fit" />
                 </div>
             </div>
-            <div className="flex flex-col w-[90%] mx-auto py-6 lg:py-16 xl:py-24">
+            <div className="flex flex-col w-[90%] mx-auto py-6 lg:py-16 xl:py-24 max-w-[1900px]">
                 <ImageCard
                     reverse={false}
                     title="Mavie Vision"
