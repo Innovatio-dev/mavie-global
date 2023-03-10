@@ -9,7 +9,7 @@ import { useState } from 'react'
 interface IContactForm {
     mavieId: boolean,
     listId: number
-  }
+}
 interface data {
     name: string;
     surname: string;
