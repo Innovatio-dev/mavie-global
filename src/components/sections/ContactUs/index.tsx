@@ -25,15 +25,11 @@ const ContactUs = () => {
     const toggleHelp = () => {
         setMavieId(true)
         setListId(68)
-        console.log(mavieId)
-        console.log(listId)
     }
 
     const toggleMedia = () => {
         setMavieId(false)
         setListId(69)
-        console.log(mavieId)
-        console.log(listId)
     }
 
     return (

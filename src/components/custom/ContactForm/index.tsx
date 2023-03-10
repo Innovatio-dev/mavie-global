@@ -14,6 +14,7 @@ interface IContactForm {
 const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
     const [value, setValue] = useState('')
     const [errorMessage, setErrorMessage] = useState<string>('')
+    const [isSubmitDisabled, setIsSubmitDisabled] = useState(true)
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         const form = new FormData(event.currentTarget)
         const formBody = document.querySelector('#form') as HTMLFormElement
@@ -35,6 +36,12 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
     const handleInvalid = (event : React.FormEvent<HTMLInputElement>) => {
         event.preventDefault()
         setErrorMessage('*required')
+    }
+    const disableSubmit = () => {
+        setIsSubmitDisabled(true)
+    }
+    const activateButton = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setIsSubmitDisabled(!event.target.checked)
     }
     return (
         <>
@@ -107,7 +114,7 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                         <label
                             className='flex items-center py-2'
                             htmlFor='mavieid'>
-                            <Image className='mr-2' src="/assets/svg/mavie.svg" width="22" height="22" alt='mavie'/>
+                            <Image className='mr-2' src="/assets/svg/logoOutline.svg" width="22" height="22" alt='mavie'/>
                                 Mavie ID
                         </label>
                         <input
@@ -140,11 +147,11 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                         <div className={styles.checkbox}>
                             <label className={styles.toggleButton}>
                                 <input
-                                    onChange={handleChange}
-                                    onInvalid={handleInvalid}
+                                    onChange={activateButton}
                                     type="checkbox"
                                     name='terms'
-                                    required
+                                    id='terms'
+                                    onClick={disableSubmit}
                                 />
                                 <div>
                                     <svg viewBox="0 0 44 44">
@@ -155,15 +162,23 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                         </div>
                         <p className='mx-auto text-center py-4'>
                             I have read and agree to mavie.global Terms of Use and Privacy Policy
-                            <span className='text-[#D14B4B]'>{mavieId && errorMessage}</span>
                         </p>
                     </div>
-                    <div className='flex items-center justify-center w-full mx-auto py-6'>
+                    <div className='flex flex-col items-center justify-center w-full mx-auto py-6'>
                         <Button>
-                            <button type="submit">
+                            <button
+                                style={{ opacity: isSubmitDisabled ? '20%' : '1' }}
+                                id='submit'
+                                type="submit"
+                                name='submit'
+                                disabled={isSubmitDisabled}>
                                 <p className='px-12 py-2 cursor-pointer'>Send</p>
                             </button>
                         </Button>
+                        <p className='text-xs py-2 text-[#D14B4B]'>
+                            {isSubmitDisabled
+                                ? 'Please agree terms and conditions to send data'
+                                : null}</p>
                     </div>
                 </div>
             </form>
