@@ -18,7 +18,7 @@ export default function LandingPage() {
     return (
         <MainLayout>
             <Head>
-                <meta property="og:title" content="MaVie Dubai Leadership Event" />
+                <meta property="og:title" content="MaVie Global / All for one" />
                 <meta property="og:url" content="https://mavie.global" />
                 <meta property="og:image" content="https://mavie.global/assets/images/landing-og.png" />
             </Head>
