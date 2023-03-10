@@ -9,7 +9,7 @@ import NewsLetter from '@/components/sections/NewsLetter'
 import AttendeesSection from '@/components/sections/attendees'
 import Testimonials from '@/components/sections/Testimonials'
 import Networking from '@/components/sections/networking'
-import Speakers from '@/components/sections/Speakers'
+// import Speakers from '@/components/sections/Speakers'
 import Loader from '@/components/custom/Loader'
 import Head from 'next/head'
 import ContactUs from '@/components/sections/ContactUs'
@@ -28,7 +28,7 @@ export default function LandingPage() {
             <WelcomeDubai/>
             <Testimonials/>
             <Program/>
-            <Speakers/>
+            {/* <Speakers/> */}
             <Networking/>
             <AttendeesSection />
             <NewsLetter/>

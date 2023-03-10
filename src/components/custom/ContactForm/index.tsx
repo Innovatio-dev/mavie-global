@@ -167,7 +167,7 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                     <div className='flex flex-col items-center justify-center w-full mx-auto py-6'>
                         <Button>
                             <button
-                                style={{ opacity: isSubmitDisabled ? '20%' : '1' }}
+                                style={{ opacity: isSubmitDisabled ? '0.2' : '1' }}
                                 id='submit'
                                 type="submit"
                                 name='submit'

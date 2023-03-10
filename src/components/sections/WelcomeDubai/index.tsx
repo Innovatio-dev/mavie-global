@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 const WelcomeDubai = () => {
     return (
-        <section id='details' className="w-full min-h-screen pt-[100px]">
+        <section id='what-is-mavie' className="w-full min-h-screen pt-[100px]">
             <motion.h2
                 transition={{ duration: 0.7 }}
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -40,8 +40,8 @@ const WelcomeDubai = () => {
                 />
                 <ImageCard
                     reverse
-                    title="Ultron Vision"
-                    subTitle="Disrupting Finance"
+                    title="strategic partnership"
+                    subTitle="ultron & mavie"
                     content1="Empowered by a <strong>massive community</strong>, Ultron stands ready to conquer the world. Empowered by a massive community, Ultron stands ready to conquer the world. Ultron Foundation is today the planet's fastest-growing layer-1 blockchain and we are proud to be in partnership with them."
                     content2="MaVie will help Ultron plan to reach new users and enter different markets, by giving insights-that cater to specific regions and languages. Doing so, they will grow their user base and make their product more accessible to people around the world.</br></br> Together, they're making their vision a reality!"
                     img="/assets/images/welcome2.png"
