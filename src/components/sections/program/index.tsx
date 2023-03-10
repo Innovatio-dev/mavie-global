@@ -37,13 +37,13 @@ const entries: IItemProps[] = [{
 }, {
     title: 'partnership with ultron',
     subtitle: 'The partnership between Ultron and Mavie is a testament to our successful collaboration. Together, we have been able to foster growing communities and achieve incredible results by working hand in hand. This presents an exciting opportunity for you to join us on this journey.',
-    startColor: '#1CFFB3',
+    startColor: '#46E1FC',
     endColor: '#1CFFB300',
     tags: ['Mavie Academy', 'Flip.me', 'secret partner announcement']
 }, {
     title: 'education',
     subtitle: 'Providing education and training in areas of WEB 3.0 and our affiliate marketing platform can be incredibly valuable for individuals who want to start an online business or explore opportunities in the emerging decentralised WEB 3.0 economy.',
-    startColor: '#4112A2',
+    startColor: '#E14696',
     endColor: '#4112A200',
     tags: ['Mavie Academy', 'Flip.me', 'secret partner announcement']
 }]
