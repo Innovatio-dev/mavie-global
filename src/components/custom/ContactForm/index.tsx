@@ -12,27 +12,39 @@ interface IContactForm {
   }
 
 const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
-    const [error, setError] = useState()
+    const [value, setValue] = useState('')
+    const [errorMessage, setErrorMessage] = useState<string>('')
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         const form = new FormData(event.currentTarget)
+        const formBody = document.querySelector('#form') as HTMLFormElement
         const formData = Object.fromEntries(form)
         console.log(formData)
         event.preventDefault()
-        axios.post(`/api/sendinblue/id=${listId}`, formData)
+        axios.post('/api/sendinblue/', formData)
             .then(function () {
-                event.currentTarget.reset()
+                console.log(formData)
+                formBody.reset()
             })
             .catch(function (error) {
-                setError(error.message)
+                console.log(error)
             })
+    }
+    const handleChange = (event : React.ChangeEvent<HTMLInputElement>) => {
+        setValue(event.target.value)
+    }
+    const handleInvalid = (event : React.FormEvent<HTMLInputElement>) => {
+        event.preventDefault()
+        setErrorMessage('*required')
     }
     return (
         <>
             <form
+                id='form'
                 onSubmit={handleSubmit}
                 className='mx-auto w-[90%] lg:w-[60%] max-w-[1200px] min-h-fit mb-12'>
                 <div className='flex flex-col lg:flex-row w-full justify-around mt-12 lg:mb-4'>
                     <div className='flex flex-col lg:w-[45%]'>
+                        <input value={listId} className='hidden' name='listId' onInvalid={handleInvalid}/>
                         <label
                             className='flex items-center justify-start py-2'
                             htmlFor='name'>
@@ -43,9 +55,13 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                             type='text'
                             name='name'
                             id='name'
+                            value={value}
+                            onChange={handleChange}
+                            onInvalid={handleInvalid}
                             className="bg-transparent w-full h-[50px] border border-gray-600 px-5 pr-16 rounded-lg relative"
                             placeholder="Type Here"
                             required/>
+                        <span className='text-[#D14B4B]'>{errorMessage}</span>
                     </div>
                     <div className='flex flex-col lg:w-[45%]'>
                         <label
@@ -58,10 +74,13 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                             type='text'
                             name='surname'
                             id="surname"
+                            onChange={handleChange}
+                            onInvalid={handleInvalid}
                             className="bg-transparent w-full h-[50px] border border-gray-600 px-5 pr-16 py-5 rounded-lg relative"
                             placeholder="Type Here"
                             required
                         />
+                        <span className='text-[#D14B4B]'>{errorMessage}</span>
                     </div>
                 </div>
                 <div className='flex flex-col lg:flex-row w-full justify-around mb-4'>
@@ -76,10 +95,13 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                             type='email'
                             name='email'
                             id='email'
+                            onChange={handleChange}
+                            onInvalid={handleInvalid}
                             className="bg-transparent w-full h-[50px] border border-gray-600 px-5 pr-16 py-5 rounded-lg relative"
                             placeholder="Type Here"
                             required
                         />
+                        <span className='text-[#D14B4B]'>{errorMessage}</span>
                     </div>
                     <div className='flex flex-col lg:w-[45%]'>
                         <label
@@ -92,10 +114,13 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                             type='text'
                             name='mavieid'
                             id='mavieid'
+                            onChange={handleChange}
+                            onInvalid={handleInvalid}
                             className="bg-transparent w-full h-[50px] border border-gray-600 px-5 pr-16 rounded-lg relative"
                             placeholder="Type Here"
                             required={mavieId}
                         />
+                        <span className='text-[#D14B4B]'>{mavieId && errorMessage}</span>
                     </div>
                 </div>
                 <div className='flex flex-col w-full justify-around my-2'>
@@ -111,10 +136,16 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                     </textarea>
                 </div>
                 <div>
-                    <div className='flex flex-row lg:flex-row items-center justify-around w-[95%] max-w-[560px] mx-auto lg:py-2 py-0'>
+                    <div className='flex flex-row items-center justify-around w-[95%] max-w-[560px] mx-auto lg:py-2 py-0'>
                         <div className={styles.checkbox}>
                             <label className={styles.toggleButton}>
-                                <input type="checkbox"/>
+                                <input
+                                    onChange={handleChange}
+                                    onInvalid={handleInvalid}
+                                    type="checkbox"
+                                    name='terms'
+                                    required
+                                />
                                 <div>
                                     <svg viewBox="0 0 44 44">
                                         <path d="M14,24 L21,31 L39.7428882,11.5937758 C35.2809627,6.53125861 30.0333333,4 24,4 C12.95,4 4,12.95 4,24 C4,35.05 12.95,44 24,44 C35.05,44 44,35.05 44,24 C44,19.3 42.5809627,15.1645919 39.7428882,11.5937758" transform="translate(-2.000000, -2.000000)"></path>
@@ -122,7 +153,10 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                                 </div>
                             </label>
                         </div>
-                        <p className='mx-auto text-center py-4'>I have read and agree to mavie.global Terms of Use and Privacy Policy</p>
+                        <p className='mx-auto text-center py-4'>
+                            I have read and agree to mavie.global Terms of Use and Privacy Policy
+                            <span className='text-[#D14B4B]'>{mavieId && errorMessage}</span>
+                        </p>
                     </div>
                     <div className='flex items-center justify-center w-full mx-auto py-6'>
                         <Button>

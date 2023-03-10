@@ -60,7 +60,7 @@ const NewsLetter = () => {
                     whileInView={{ opacity: 0.75 }}
                     className="md:block absolute hidden w-[42vw] h-[60vh] right-0 top-[30%]"
                 >
-                    <Image src="/assets/images/diamond_right.png" alt="diamond" fill />
+                    <Image src="/assets/images/D2.png" alt="diamond" fill />
                 </motion.div>
                 <motion.div
                     transition={{ duration: 1.5 }}
@@ -68,7 +68,7 @@ const NewsLetter = () => {
                     whileInView={{ opacity: 0.75 }}
                     className="md:block absolute hidden w-[42vw] h-[60vh] left-0 top-[30%]"
                 >
-                    <Image src="/assets/images/diamond_left.png" alt="diamond" fill />
+                    <Image src="/assets/images/D1.png" alt="diamond" fill />
                 </motion.div>
             </div>
         </motion.section>
