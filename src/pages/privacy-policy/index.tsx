@@ -7,7 +7,7 @@ const Privacy = () => {
         <MainLayout>
             <Head>
                 <meta name="description" content="Mavie Privacy Policy." />
-                <meta property="og:title" content="MaVie Dubai Leadership Event | Privacy Policy" />
+                <meta property="og:title" content="MaVie Global / Privacy & Policy" />
                 <meta property="og:url" content="https://mavie.global/privacy-policy" />
                 <meta property="og:image" content="https://mavie.global/assets/images/privacy-og.png" />
             </Head>

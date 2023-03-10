@@ -73,8 +73,8 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     return (
         <>
             <Head>
-                <title>MaVie | Dubai Leadership Event</title>
-                <meta name="description" content="The fastest growing global affiliate marketing agency." />
+                <title>MaVie Global / All for one</title>
+                <meta name="description" content="Unleash your potential with MaVie Global - the world’s fastest growing affiliate company. Join us now, own your future and transform your life!" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
                 <link href='/apple-touch-icon.jpg' rel='apple-touch-icon' sizes='180x180' />
