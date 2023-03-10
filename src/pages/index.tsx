@@ -28,7 +28,7 @@ export default function LandingPage() {
             <WelcomeDubai/>
             <Testimonials/>
             <Program/>
-            <Speakers/>
+            {/* <Speakers/> */}
             <Networking/>
             <AttendeesSection />
             <NewsLetter/>
