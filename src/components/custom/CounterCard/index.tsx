@@ -12,7 +12,7 @@ const CounterCard = ({
     amount: number;
     label: string;
     id: number;
-    sufix?:string;
+    sufix?: string;
 }) => {
     const numberWithCommas = (x: number) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') // Parsing function to add commas (dot) every 3 digits.
     const [count, setCount] = useState(0)
@@ -44,10 +44,10 @@ const CounterCard = ({
         <div ref={ref} style={id % 2 !== 0 ? { paddingLeft: '3px' } : { paddingRight: '3px' }}
             className='relative 2xl:w-[calc(25%-3rem)] xl:w-[calc(25%-2.5rem)] lg:w-[calc(25%-1rem)] w-[calc(50%-0.5rem)] md:pl-[3px] md:!pr-0 bg-vertical-gradient hover:backdrop-brightness-200 rounded-tr-lg md:rounded-tl-none rounded-tl-lg rounded-br-lg md:rounded-bl-none rounded-bl-lg hover:translate-y-[-0.25rem] transition-all duration-300'>
             <div className= 'flex flex-col gap-4 justify-start text-center md:px-5 py-4 w-full bg-purple-gradient md:rounded-tr-md md:rounded-br-md hover:backdrop-brightness-200 relative transition-all duration-300'>
-                <p className='3xl:text-7xl 2xl:text-6xl xl:text-5xl lg:text-4xl text-3xl font-semibold'>
+                <p className='3xl:text-7xl 2xl:text-6xl xl:text-5xl lg:text-4xl text-3xl font-semibold font-eesti'>
                     {numberWithCommas(count)}{sufix}
                 </p>
-                <p className='uppercase min-w-fit'>
+                <p className='uppercase min-w-fit text-sm md:text-base'>
                     {label}
                 </p>
             </div>
