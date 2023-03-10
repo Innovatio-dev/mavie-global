@@ -46,74 +46,74 @@ const Networking = () => {
                             initial={{ x: -150, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             className='flex py-1 before:content-diamond'>
-                            <p className='pl-6'><span className='text-brand-pink'>VIP</span> Dubai Experience</p>
+                            <p className='pl-6'>Connect with <span className='bg-main-gradient bg-clip-text inline-block text-transparent'>MaVie team</span></p>
                         </motion.li>
                         <motion.li
                             transition={{ duration: 0.6, delay: 0.1 }}
                             initial={{ x: -150, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             className='flex py-1 before:content-diamond'>
-                            <p className='pl-6'>MaVie <span className='text-brand-cyan'>complete rebranding</span> unveil</p>
+                            <p className='pl-6'>Be part of <span className='bg-main-gradient bg-clip-text inline-block text-transparent'>Leadership & MaVie workshops</span> </p>
                         </motion.li>
                         <motion.li
                             transition={{ duration: 0.6, delay: 0.2 }}
                             initial={{ x: -150, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             className='flex py-1 before:content-diamond'>
-                            <p className='pl-6'>Workshop with <span className='text-brand-pink'>new materials</span></p>
+                            <p className='pl-6'>Forge meaningful <span className='bg-main-gradient bg-clip-text inline-block text-transparent'>connections and friendships</span></p>
                         </motion.li>
                         <motion.li
                             transition={{ duration: 0.6, delay: 0.3 }}
                             initial={{ x: -150, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             className='flex py-1 before:content-diamond'>
-                            <p className='pl-6'>The <span className='text-brand-cyan'>100M</span> vision</p>
+                            <p className='pl-6'>Stay ahead with <span className='bg-main-gradient bg-clip-text inline-block text-transparent'>latest news</span> </p>
                         </motion.li>
                         <motion.li
                             transition={{ duration: 0.6, delay: 0.4 }}
                             initial={{ x: -150, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             className='flex py-1 before:content-diamond'>
-                            <p className='pl-6'>Exclusive <span className='text-brand-pink'>Yacht Party</span></p>
+                            <p className='pl-6'>Have fun and <span className='bg-main-gradient bg-clip-text inline-block text-transparent'>create lasting memories</span></p>
                         </motion.li>
                     </ul>
                 </div>
-                <div className='flex lg:hidden mt-[43.5rem] md:mt-[43rem] w-full h-fit text-2xl pt-32 md:pt-72 pb-12 p-12 md:p-20 bg-purple-bottom'>
+                <div className='flex lg:hidden mt-[43.5rem] md:mt-[43rem] w-full h-fit text-2xl pt-32 md:pt-72 pb-12 p-5 md:p-20 bg-purple-bottom'>
                     <ul className='flex justify-center flex-col  marker:content-diamond'>
                         <motion.li
                             transition={{ duration: 0.6 }}
                             initial={{ x: -150, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             className='flex py-1 before:content-diamond'>
-                            <p className='pl-6'><span className='text-brand-pink'>VIP</span> Dubai Experience</p>
+                            <p className='pl-6'>Connect with <span className='bg-main-gradient bg-clip-text inline-block text-transparent'>MaVie team</span></p>
                         </motion.li>
                         <motion.li
                             transition={{ duration: 0.6, delay: 0.1 }}
                             initial={{ x: -150, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             className='flex py-1 before:content-diamond'>
-                            <p className='pl-6'>MaVie <span className='text-brand-cyan'>complete rebranding</span> unveil</p>
+                            <p className='pl-6'>Be part of <span className='bg-main-gradient bg-clip-text inline-block text-transparent'>Leadership & MaVie workshops</span> </p>
                         </motion.li>
                         <motion.li
                             transition={{ duration: 0.6, delay: 0.2 }}
                             initial={{ x: -150, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             className='flex py-1 before:content-diamond'>
-                            <p className='pl-6'>Workshop with <span className='text-brand-pink'>new materials</span></p>
+                            <p className='pl-6'>Forge meaningful <span className='bg-main-gradient bg-clip-text inline-block text-transparent'>connections and friendships</span></p>
                         </motion.li>
                         <motion.li
                             transition={{ duration: 0.6, delay: 0.3 }}
                             initial={{ x: -150, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             className='flex py-1 before:content-diamond'>
-                            <p className='pl-6'>The <span className='text-brand-cyan'>100M</span> vision</p>
+                            <p className='pl-6'>Stay ahead with <span className='bg-main-gradient bg-clip-text inline-block text-transparent'>latest news</span> </p>
                         </motion.li>
                         <motion.li
                             transition={{ duration: 0.6, delay: 0.4 }}
                             initial={{ x: -150, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             className='flex py-1 before:content-diamond'>
-                            <p className='pl-6'>Exclusive <span className='text-brand-pink'>Yacht Party</span></p>
+                            <p className='pl-6'>Have fun and <span className='bg-main-gradient bg-clip-text inline-block text-transparent'>create lasting memories</span></p>
                         </motion.li>
                     </ul>
                 </div>
