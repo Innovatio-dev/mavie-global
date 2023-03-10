@@ -5,44 +5,44 @@ import { motion } from 'framer-motion'
 import { slideLeft, zoomOut, zoomIn } from '@/utils/motion_effects'
 
 const entries: IItemProps[] = [{
-    title: 'SECRET PROJECT - THE NEW ERA',
-    subtitle: 'A secret project that bridges the gap between WEB2 and WEB3 and introduces the masses to decentralized finance (DeFi).',
+    title: 'RESHAPE - THE NEW ERA',
+    subtitle: 'A massive project that bridges the gap between WEB2 and WEB3 and introduces the masses to decentralized finance (DeFi).',
     startColor: '#E14696',
     endColor: '#E1469600',
     tags: ['Mavie Academy', 'Flip.me', 'secret partner announcement']
 }, {
-    title: 'MAVIE - THE 100M VISION',
-    subtitle: 'Introducing the vision that will position MaVie as one of the most prominent leaders in the WEB3.',
+    title: 'THE 100M mavie VISION',
+    subtitle: "Join MaVie's 100M vision to make a difference in the world and position yourself for future success. Gain valuable expertise in Web 3.0. Stay ahead of the curve and learn about the latest developments in blockchain technology, decentralized applications, and more.",
     startColor: '#46E1FC',
     endColor: '#46E1FC00',
     tags: ['Mavie Academy', 'Flip.me', 'secret partner announcement']
 }, {
-    title: 'MAVIE - REBRANDING UNVEIL',
-    subtitle: 'Unveiling a complete rebranding, with new sales materials that reflect our values and vision for the future.',
+    title: 'SETTING THE STANDARD',
+    subtitle: 'MaVie sets the standard in Web 3.0 and affiliate marketing, providing innovative solutions for individuals and businesses to succeed in the digital economy.',
     startColor: '#E14696',
     endColor: '#E1469600',
     tags: ['Mavie Academy', 'Flip.me', 'secret partner announcement']
 }, {
-    title: 'MAVIE - LEADERSHIP WORKSHOP',
-    subtitle: 'An introduction to the new sales materials and training on how to present MaVie to the global audience.',
+    title: 'LEADERSHIP SUPPORT',
+    subtitle: "MaVie's program offers practical tools and strategies to enhance leadership skills and drive success.",
     startColor: '#46E1FC',
     endColor: '#46E1FC00',
     tags: ['Mavie Academy', 'Flip.me', 'secret partner announcement']
 }, {
-    title: 'mavie - recognition',
-    subtitle: 'A special moment for the MaVie family, where we honor the top performing members from all around the world.',
+    title: 'EVENTS',
+    subtitle: "Elevate your personal and professional growth with MaVie's exclusive events. Connect with like-minded individuals and enjoy unforgettable experiences worldwide.",
     startColor: '#E14696',
     endColor: '#4112A200',
     tags: ['Mavie Academy', 'Flip.me', 'secret partner announcement']
 }, {
-    title: 'ultron - disrupting finance',
-    subtitle: 'Ultron is set to unveil its grand plan for the next phase after months of rapid expansion.',
+    title: 'partnership with ultron',
+    subtitle: 'The partnership between Ultron and Mavie is a testament to our successful collaboration. Together, we have been able to foster growing communities and achieve incredible results by working hand in hand. This presents an exciting opportunity for you to join us on this journey.',
     startColor: '#1CFFB3',
     endColor: '#1CFFB300',
     tags: ['Mavie Academy', 'Flip.me', 'secret partner announcement']
 }, {
-    title: 'ULTRON - SURPRISE INFLUENCERS',
-    subtitle: 'Ultron will introduce its new partners who will help educate the masses about the future of WEB3.',
+    title: 'education',
+    subtitle: 'Providing education and training in areas of WEB 3.0 and our affiliate marketing platform can be incredibly valuable for individuals who want to start an online business or explore opportunities in the emerging decentralised WEB 3.0 economy.',
     startColor: '#4112A2',
     endColor: '#4112A200',
     tags: ['Mavie Academy', 'Flip.me', 'secret partner announcement']
