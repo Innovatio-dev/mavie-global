@@ -24,9 +24,9 @@ const NewsLetter = () => {
                     transition={{ duration: 1 }}
                     initial={{ y: 150, opacity: 0, scale: 1.8 }}
                     whileInView={{ y: 0, opacity: 1, scale: 1 }}
-                    className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[10rem] mb-16 lg:mb-6 leading-none w-[80%] lg:w-full mx-auto"
+                    className="uppercase text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[10rem] mb-16 lg:mb-6 leading-none w-[80%] lg:w-full mx-auto"
                 >
-                    There is more..
+                    Experience the Unexpected
                 </motion.h2>
                 <motion.h3
                     transition={{ duration: 1 }}
@@ -58,17 +58,17 @@ const NewsLetter = () => {
                     transition={{ duration: 1.5 }}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 0.75 }}
-                    className="md:block absolute hidden w-[42vw] h-[60vh] right-0 top-[30%]"
+                    className="block absolute w-[42vw] h-[60vh] right-0 top-[30%]"
                 >
-                    <Image src="/assets/images/D2.png" alt="diamond" fill />
+                    <Image src="/assets/images/D2.png" alt="diamond" fill objectFit='contain'/>
                 </motion.div>
                 <motion.div
                     transition={{ duration: 1.5 }}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 0.75 }}
-                    className="md:block absolute hidden w-[42vw] h-[60vh] left-0 top-[30%]"
+                    className="block absolute  w-[42vw] h-[60vh] left-0 top-[30%]"
                 >
-                    <Image src="/assets/images/D1.png" alt="diamond" fill />
+                    <Image src="/assets/images/D1.png" alt="diamond" fill objectFit='contain'/>
                 </motion.div>
             </div>
         </motion.section>

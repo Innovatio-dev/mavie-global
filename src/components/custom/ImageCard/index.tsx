@@ -1,4 +1,3 @@
-import CallToAction from '@/components/custom/CallToAction'
 import Image from 'next/image'
 import { Parallax } from 'react-scroll-parallax'
 import { motion } from 'framer-motion'
@@ -56,9 +55,6 @@ const ImageCard: React.FC<ImageCardProps> = ({ title, subTitle, content1, conten
                         <h3 className='text-4xl lg:text-5xl uppercase font-thin italic lg:mb-2'>{subTitle}</h3>
                         <p className='text-lg py-2 font-thin' dangerouslySetInnerHTML={{ __html: content1 }} />
                         <p className='text-lg pb-12 font-thin' dangerouslySetInnerHTML={{ __html: content2 }} />
-                        <div className='hidden lg:block w-fit mx-auto lg:ml-0'>
-                            <CallToAction />
-                        </div>
                     </div>
                 </Parallax>
             </motion.div>
