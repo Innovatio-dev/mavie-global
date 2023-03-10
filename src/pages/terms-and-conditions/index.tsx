@@ -7,7 +7,7 @@ const Terms = () => {
         <MainLayout>
             <Head>
                 <meta name="description" content="Mavie terms and conditions." />
-                <meta property="og:title" content="MaVie Dubai Leadership Event | Terms And Conditions" />
+                <meta property="og:title" content="MaVie Global / Terms & Conditions" />
                 <meta property="og:url" content="https://mavie.global/terms-and-conditions" />
                 <meta property="og:image" content="https://mavie.global/assets/images/terms-og.png" />
             </Head>
