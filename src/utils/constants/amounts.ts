@@ -1,6 +1,6 @@
 export const CARDS = [
-    { amount: 200000, label: 'members' },
-    { amount: '40M', label: 'in commision paid' },
-    { amount: 120, label: 'countries' },
-    { amount: 100, label: 'events' }
+    { amount: 200000, label: 'members', sufix: '+' },
+    { amount: 40, label: 'in commissions paid', sufix: 'M+' },
+    { amount: 120, label: 'countries', sufix: '+' },
+    { amount: 100, label: 'events', sufix: '+' }
 ]
