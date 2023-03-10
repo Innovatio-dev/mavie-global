@@ -60,7 +60,7 @@ const NewsLetter = () => {
                     whileInView={{ opacity: 0.75 }}
                     className="block absolute w-[42vw] h-[60vh] right-0 top-[30%]"
                 >
-                    <Image src="/assets/images/D2.png" alt="diamond" fill objectFit='contain'/>
+                    <Image src="/assets/images/D2.png" alt="diamond" fill className='object-contain'/>
                 </motion.div>
                 <motion.div
                     transition={{ duration: 1.5 }}
@@ -68,7 +68,7 @@ const NewsLetter = () => {
                     whileInView={{ opacity: 0.75 }}
                     className="block absolute  w-[42vw] h-[60vh] left-0 top-[30%]"
                 >
-                    <Image src="/assets/images/D1.png" alt="diamond" fill objectFit='contain'/>
+                    <Image src="/assets/images/D1.png" alt="diamond" fill className='object-contain'/>
                 </motion.div>
             </div>
         </motion.section>

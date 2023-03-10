@@ -51,7 +51,7 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                 className='mx-auto w-[90%] lg:w-[60%] max-w-[1200px] min-h-fit mb-12'>
                 <div className='flex flex-col lg:flex-row w-full justify-around mt-12 lg:mb-4'>
                     <div className='flex flex-col lg:w-[45%]'>
-                        <input value={listId} className='hidden' name='listId' onInvalid={handleInvalid}/>
+                        <input value={listId} className='hidden' name='listId' onInvalid={handleInvalid} readOnly/>
                         <label
                             className='flex items-center justify-start py-2'
                             htmlFor='name'>
@@ -81,6 +81,7 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                             type='text'
                             name='surname'
                             id="surname"
+                            value={value}
                             onChange={handleChange}
                             onInvalid={handleInvalid}
                             className="bg-transparent w-full h-[50px] border border-gray-600 px-5 pr-16 py-5 rounded-lg relative"
@@ -102,6 +103,7 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                             type='email'
                             name='email'
                             id='email'
+                            value={value}
                             onChange={handleChange}
                             onInvalid={handleInvalid}
                             className="bg-transparent w-full h-[50px] border border-gray-600 px-5 pr-16 py-5 rounded-lg relative"
@@ -121,6 +123,7 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                             type='text'
                             name='mavieid'
                             id='mavieid'
+                            value={value}
                             onChange={handleChange}
                             onInvalid={handleInvalid}
                             className="bg-transparent w-full h-[50px] border border-gray-600 px-5 pr-16 rounded-lg relative"
@@ -151,6 +154,7 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                                     type="checkbox"
                                     name='terms'
                                     id='terms'
+                                    value={value}
                                     onClick={disableSubmit}
                                 />
                                 <div>
@@ -161,7 +165,9 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                             </label>
                         </div>
                         <p className='mx-auto text-center py-4'>
-                            I have read and agree to mavie.global Terms of Use and Privacy Policy
+                            I have read and agree to mavie.global
+                            <a href='terms-and-conditions' className='px-1 text-brand-pink underline'>terms of use</a>and
+                            <a href='privacy-policy' className='px-1 text-brand-pink underline'>privacy policy</a>
                         </p>
                     </div>
                     <div className='flex flex-col items-center justify-center w-full mx-auto py-6'>
