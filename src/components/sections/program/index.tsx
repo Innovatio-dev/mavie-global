@@ -49,7 +49,7 @@ const entries: IItemProps[] = [{
 }]
 
 export default function Program() {
-    return <section id='program' className={styles.container}>
+    return <section id='why-mavie' className={styles.container}>
         <InnerContainer>
             <div className={styles.content}>
                 <motion.h2

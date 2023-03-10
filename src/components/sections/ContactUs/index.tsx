@@ -33,7 +33,7 @@ const ContactUs = () => {
     }
 
     return (
-        <section className='flex flex-col'>
+        <section className='flex flex-col' id='contact-us'>
             <div className='flex flex-col text-center mx-auto py-[100px] w-full h-fit bg-black'>
                 <h2 className='text-6xl lg:text-7xl uppercase max-w-[700px] lg:mx-auto mx-4'>Contact Us</h2>
                 <p className='font-thin max-w-[700px] lg:mx-auto mx-4'>If you have any questions or concerns, please don&apos;t hesitate to contact us.</p>
