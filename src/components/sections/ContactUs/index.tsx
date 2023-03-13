@@ -1,6 +1,8 @@
 import ContactForm from '@/components/custom/ContactForm'
 import HoverBox from '@/components/custom/HoverBox'
+import Image from 'next/image'
 import { useState } from 'react'
+import { Parallax } from 'react-scroll-parallax'
 
 const item = [
     {
@@ -53,10 +55,28 @@ const ContactUs = () => {
                 </div>
             </div>
             <div className='flex w-full min-h-[800px]'>
-                {mavieId
-                    ? <ContactForm mavieId={mavieId} listId={listId}/>
-                    : <ContactForm mavieId={mavieId} listId={listId}/>
-                }
+                <div className="w-full relative top-0">
+                    <div className='absolute w-[200px] h-[100%] lg:w-1/6 -z-10'>
+                        <Image src="/assets/images/texture_left_lines.webp" fill alt="image" className="object-fit" />
+                    </div>
+                    <Parallax speed={5} rotateY={[0, -30]} rotateZ={[15, 0]}>
+                        <i className='absolute w-[75px] lg:w-[150px] h-[75px] lg:h-[150px] top-0 lg:-top-48 right-0 lg:right-20 -rotate-30'>
+                            <Image src="/assets/svg/arrow_right.svg" alt="arrow" fill className='object-contain' />
+                        </i>
+                    </Parallax>
+                    {mavieId
+                        ? <ContactForm mavieId={mavieId} listId={listId}/>
+                        : <ContactForm mavieId={mavieId} listId={listId}/>
+                    }
+                    <Parallax speed={6} rotateY={[0, 45]} rotateZ={[15, 0]}>
+                        <i className='absolute w-[75px] lg:w-[150px] h-[75px] lg:h-[150px] left-0 lg:left-20 -top-32 lg:-top-48 -rotate-15'>
+                            <Image src="/assets/svg/arrow_left.svg" alt="arrow" fill className='object-contain' />
+                        </i>
+                    </Parallax>
+                    <div className='absolute w-[200px] h-[100%] lg:w-1/6 -z-10 right-0 -top-16'>
+                        <Image src="/assets/images/texture_right_lines.webp" fill alt="image" className="object-fit" />
+                    </div>
+                </div>
             </div>
         </section>
     )
