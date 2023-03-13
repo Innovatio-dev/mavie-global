@@ -19,7 +19,7 @@ const NewsLetter = () => {
             onViewportLeave={handleOutView}
             className="flex flex-col w-full min-h-screen bg-news bg-center lg:bg-cover bg-no-repeat items-center justify-center text-center"
         >
-            <div>
+            <div className='w-full h-full z-20'>
                 <motion.h2
                     transition={{ duration: 1 }}
                     initial={{ y: 150, opacity: 0, scale: 1.8 }}
@@ -34,7 +34,7 @@ const NewsLetter = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     className="max-w-[320px] font-light lg:max-w-[1080px] text-2xl lg:text-3xl xl:text-4xl mx-auto"
                 >
-                    Reserve your seat for our next MaVie event in 2023
+                    Reserve your seat for our next MaVie events in 2023
                 </motion.h3>
                 <motion.h3
                     transition={{ duration: 1 }}
@@ -58,15 +58,15 @@ const NewsLetter = () => {
                     transition={{ duration: 1.5 }}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 0.75 }}
-                    className="block absolute w-[42vw] h-[60vh] right-0 top-[30%]"
+                    className="block absolute w-[40vw] h-[60vh] right-0 top-[30%]"
                 >
                     <Image src="/assets/images/D2.png" alt="diamond" fill className='object-contain'/>
                 </motion.div>
                 <motion.div
                     transition={{ duration: 1.5 }}
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 0.75 }}
-                    className="block absolute  w-[42vw] h-[60vh] left-0 top-[30%]"
+                    whileInView={{ opacity: 0.65 }}
+                    className="block absolute  w-[40vw] h-[60vh] left-0 top-[30%]"
                 >
                     <Image src="/assets/images/D1.png" alt="diamond" fill className='object-contain'/>
                 </motion.div>
