@@ -5,7 +5,10 @@ const SibApiV3Sdk = require('sib-api-v3-sdk')
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
         const defaultClient = SibApiV3Sdk.ApiClient.instance
-        const { email, listId } = req.body
+        const { email } = req.body
+        let { listId } = req.body
+
+        listId = parseInt(listId)
 
         if (!email) {
             return res.status(400).json({ message: 'Bad request, you are missing some required parameters' })
