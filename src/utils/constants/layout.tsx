@@ -12,6 +12,11 @@ export const NAVIGATION_LINKS = [
         name: 'why mavie?',
         to: '#why-mavie',
         icon: <Marker />
+    },
+    {
+        name: 'events',
+        to: '#newsletter',
+        icon: <Marker />
     }
     // {
     //     name: 'team',
