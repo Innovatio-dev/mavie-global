@@ -70,9 +70,9 @@ export default function BigCounter() {
                     </div>
 
                 </motion.div>
-                <div className={styles.imageContainer}>
+                {/* <div className={styles.imageContainer}>
                     <Image style={{ objectFit: 'contain' }} fill src='/assets/svg/outlined_logo.svg' alt="event date"/>
-                </div>
+                </div> */}
                 <motion.div className={styles.darkCircle}
                     transition= {{ duration: 1 }}
                     variants={counterAnimation}
