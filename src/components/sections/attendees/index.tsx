@@ -11,45 +11,45 @@ import { Parallax } from 'react-scroll-parallax'
 
 const cyanBalls = [
     {
-        position: [-100, 300],
+        position: [-100, 500],
         size: 200,
-        speed: 20
+        shiftFactor: -600
     },
     {
         position: [0, 640],
         size: 90,
-        speed: 14
+        shiftFactor: -240
     }, {
         position: [100, 550],
         size: 70,
-        speed: 10
+        shiftFactor: -820
     }
 ]
 const pinkBalls = [
     {
-        position: [90, 200],
+        position: [90, 0],
         size: 80,
-        speed: -30
+        shiftFactor: 1000
     },
     {
-        position: [-100, 100],
+        position: [-100, -100],
         size: 250,
-        speed: -40
+        shiftFactor: 800
     },
     {
         position: [100, 0],
         size: 100,
-        speed: -25
+        shiftFactor: 400
     },
     {
         position: [120, 100],
         size: 120,
-        speed: -35
+        shiftFactor: 800
     },
     {
         position: [200, 600],
         size: 100,
-        speed: -20
+        shiftFactor: 200
     }
 ]
 const posts: Post[] = [{
@@ -108,6 +108,7 @@ export default function AttendeesSection() {
     const [showAll, setShowAll] = useState(false)
     const [currentWidth, setCurrentWidth] = useState<number>(0)
     const contentRef = useRef<HTMLDivElement>(null)
+    const [currentScroll, setCurrentScroll] = useState<number>(0)
 
     const handleViewMore = useCallback((event: MouseEvent<HTMLAnchorElement>) => {
         event.preventDefault()
@@ -119,9 +120,24 @@ export default function AttendeesSection() {
         const resizeListener = () => {
             setCurrentWidth(window.innerWidth)
         }
+        const scrollListener = () => {
+            if (contentRef.current) {
+                const { bottom, height } = contentRef.current.getBoundingClientRect()
+                let scrollPos = 1 - bottom / (window.innerHeight + height)
+                scrollPos = Math.max(Math.min(scrollPos, 1), 0)
+                if (Math.abs(scrollPos - currentScroll) > 0.01) {
+                    setCurrentScroll(scrollPos)
+                }
+            }
+        }
         window.addEventListener('resize', resizeListener)
+        window.addEventListener('scroll', scrollListener)
         resizeListener()
-        return () => window.removeEventListener('resize', resizeListener)
+        scrollListener()
+        return () => {
+            window.removeEventListener('resize', resizeListener)
+            window.removeEventListener('scroll', scrollListener)
+        }
     }, [])
 
     return <section id='why-attend' className={styles.container}>
@@ -129,35 +145,35 @@ export default function AttendeesSection() {
             <div className={styles.pinkGradient}>
 
             </div>
+            {cyanBalls.map((ball, index) => <div
+                key={index}
+                style={{
+                    position: 'absolute',
+                    left: `${ball.position[0]}px`,
+                    top: `${ball.position[1]}px`,
+                    width: `${ball.size}px`,
+                    height: `${ball.size}px`,
+                    transition: 'all 0.1s linear',
+                    willChange: 'transform',
+                    transform: `translateY(${ball.shiftFactor * currentScroll}px)`
+                }}>
+                <Image src={'/assets/svg/ballcyan.svg'} alt={`ballcyan${index}`} fill />
+            </div>)}
+            {pinkBalls.map((ball, index) => <div
+                key={index}
+                style={{
+                    position: 'absolute',
+                    right: `${ball.position[0]}px`,
+                    top: `${ball.position[1]}px`,
+                    width: `${ball.size}px`,
+                    height: `${ball.size}px`,
+                    willChange: 'transform',
+                    transition: 'all 0.1s linear',
+                    transform: `translateY(${ball.shiftFactor * currentScroll}px)`
+                }}>
+                <Image src={'/assets/svg/ballpink.svg'} alt={`ballpink${index}`} fill />
+            </div>)}
 
-            {pinkBalls.map((ball, index) =>
-                <Parallax key={index} speed={ball.speed}>
-                    <div
-                        style={{
-                            position: 'absolute',
-                            right: `${ball.position[0]}px`,
-                            top: `${ball.position[1]}px`,
-                            width: `${ball.size}px`,
-                            height: `${ball.size}px`
-                        }}>
-                        <Image src={'/assets/svg/ballpink.svg'} alt={`ballpink${index}`} fill />
-                    </div>
-                </Parallax>
-            )}
-            {cyanBalls.map((ball, index) =>
-                <Parallax key={index} speed={ball.speed}>
-                    <div
-                        style={{
-                            position: 'absolute',
-                            left: `${ball.position[0]}px`,
-                            top: `${ball.position[1]}px`,
-                            width: `${ball.size}px`,
-                            height: `${ball.size}px`
-                        }}>
-                        <Image src={'/assets/svg/ballcyan.svg'} alt={`ballcyan${index}`} fill />
-                    </div>
-                </Parallax>
-            )}
         </div>
         <div className={styles.content} ref={contentRef}>
             <motion.h2
