@@ -115,6 +115,15 @@ export default function AttendeesSection() {
         contentRef.current?.scrollIntoView()
     }, [showAll])
 
+    useEffect(() => {
+        const resizeListener = () => {
+            setCurrentWidth(window.innerWidth)
+        }
+        window.addEventListener('resize', resizeListener)
+        resizeListener()
+        return () => window.removeEventListener('resize', resizeListener)
+    }, [])
+
     return <section id='why-attend' className={styles.container}>
         <div className={styles.scene}>
             <div className={styles.pinkGradient}>
@@ -156,7 +165,7 @@ export default function AttendeesSection() {
                 viewport={{ once: true }}
                 initial={'hidden'}
                 whileInView={'visible'}
-                className='uppercase text-4xl md:text-6xl max-w-4xl font-[600] tracking-[0.115em]' >{'WHAT does our users SAY ABOUT'} <span className={styles.coloredText}>mavie</span></motion.h2>
+                className='uppercase text-4xl md:text-6xl max-w-4xl font-[600] tracking-[0.115em]' >{'WHAT do our users SAY ABOUT'} <span className={styles.coloredText}>mavie</span></motion.h2>
             {currentWidth < 640 && <motion.div
                 variants={nothing}
                 initial={'hidden'}

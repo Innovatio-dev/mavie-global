@@ -12,6 +12,7 @@ import { motion as m, AnimatePresence } from 'framer-motion'
 import { NAVIGATION_LINKS } from '@/utils/constants/layout'
 // Styles
 import styles from './styles.module.scss'
+import Marker from '@/components/shared/Marker'
 
 const Menu = ({ isOpen, onClick }: { isOpen: boolean, onClick: (to: string) => void }) => (
     <AnimatePresence>
@@ -41,7 +42,7 @@ const Menu = ({ isOpen, onClick }: { isOpen: boolean, onClick: (to: string) => v
                         ))
                     }
                     <li>
-                        <Link href='https://www.backoffice.mavie.global' target='_blank' className={styles.link}><span className='w-5 h-5'><OutlineLogo /></span>Backoffice</Link>
+                        <Link href='https://www.backoffice.mavie.global' target='_blank' className={styles.link}><Marker /> Backoffice</Link>
                     </li>
                 </ul>
             </m.div>
