@@ -115,6 +115,15 @@ export default function AttendeesSection() {
         contentRef.current?.scrollIntoView()
     }, [showAll])
 
+    useEffect(() => {
+        const resizeListener = () => {
+            setCurrentWidth(window.innerWidth)
+        }
+        window.addEventListener('resize', resizeListener)
+        resizeListener()
+        return () => window.removeEventListener('resize', resizeListener)
+    }, [])
+
     return <section id='why-attend' className={styles.container}>
         <div className={styles.scene}>
             <div className={styles.pinkGradient}>

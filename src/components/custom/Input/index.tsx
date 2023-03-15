@@ -55,6 +55,7 @@ const Input = ({
                     </div>
                     : <div>
                         <form onSubmit={handleSubmit}>
+                            <input value={64} className='hidden' name='listId' readOnly/>
                             <p className="my-2 italic">Reserve your seat now</p>
                             <input
                                 type='email'
