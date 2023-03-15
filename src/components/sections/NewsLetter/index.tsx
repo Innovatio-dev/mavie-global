@@ -17,7 +17,7 @@ const NewsLetter = () => {
             id="newsletter"
             onViewportEnter={handleInView}
             onViewportLeave={handleOutView}
-            className="flex flex-col w-full min-h-screen bg-news bg-center lg:bg-cover bg-no-repeat items-center justify-center text-center"
+            className="flex flex-col w-full min-h-screen bg-news bg-center lg:bg-cover bg-no-repeat items-center justify-center text-center lg:-mb-16"
         >
             <div className='w-full h-full z-20'>
                 <motion.h2
