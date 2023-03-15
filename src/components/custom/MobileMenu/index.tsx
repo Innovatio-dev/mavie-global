@@ -25,10 +25,10 @@ const Menu = ({ isOpen, onClick }: { isOpen: boolean, onClick: (to: string) => v
                 transition={{ type: 'just' }}
                 className={styles.containerOptions}
             >
-                <Image src='/assets/images/texture_left_lines.webp' width={220} height={200} alt='arrow' className='absolute -top-32 left-0 opacity-70 z-0' />
-                <Image src='/assets/svg/arrow_right_lines.svg' width={45} height={45} alt='arrow' className='absolute top-10 right-10' />
-                <Image src='/assets/svg/arrow_right_lines.svg' width={45} height={45} alt='arrow' className='absolute top-14 right-20' />
-                <Image src='/assets/svg/arrow_right_lines.svg' width={60} height={60} alt='arrow' className='absolute bottom-40 right-16 rotate-[50deg]' />
+                <Image src='/assets/images/texture_left_lines.webp' width={220} height={200} priority alt='arrow' className='absolute -top-32 left-0 opacity-70 z-0' />
+                <Image src='/assets/svg/arrow_right_lines.svg' width={45} height={45} priority alt='arrow' className='absolute top-10 right-10' />
+                <Image src='/assets/svg/arrow_right_lines.svg' width={45} height={45} priority alt='arrow' className='absolute top-14 right-20' />
+                <Image src='/assets/svg/arrow_right_lines.svg' width={60} height={60} priority alt='arrow' className='absolute bottom-40 right-16 rotate-[50deg]' />
                 <ul className='relative z-10'>
                     {
                         NAVIGATION_LINKS.map(({ name, to, icon }) => (
