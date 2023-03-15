@@ -1,25 +1,26 @@
 // import { AiOutlineTeam } from 'react-icons/ai'
-import { HiOutlineChatBubbleOvalLeft, HiOutlineClipboard, HiOutlineDocumentText } from 'react-icons/hi2'
+import Marker from '@/components/shared/Marker'
+// import { HiOutlineClipboard, HiOutlineDocumentText } from 'react-icons/hi2'
 
 export const NAVIGATION_LINKS = [
     {
         name: 'what is mavie?',
         to: '#what-is-mavie',
-        icon: <HiOutlineClipboard />
+        icon: <Marker />
     },
     {
         name: 'why mavie?',
         to: '#why-mavie',
-        icon: <HiOutlineDocumentText />
-    },
+        icon: <Marker />
+    }
     // {
     //     name: 'team',
     //     to: '#team',
     //     icon: <AiOutlineTeam />
     // },
-    {
-        name: 'contact us',
-        to: '#contact-us',
-        icon: <HiOutlineChatBubbleOvalLeft />
-    }
+    // {
+    //     name: 'contact us',
+    //     to: '#contact-us',
+    //     icon: <HiOutlineChatBubbleOvalLeft />
+    // }
 ]

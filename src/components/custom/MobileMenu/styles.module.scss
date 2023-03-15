@@ -12,7 +12,7 @@
         @apply w-full h-[calc(100vh-96px)] block bg-black absolute top-24 left-0;
 
         ul {
-            @apply w-full flex flex-col justify-around;
+            @apply w-full flex flex-col gap-16 mt-10;
             min-height: calc(100% - 180px);
 
             .link {

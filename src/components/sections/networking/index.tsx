@@ -5,7 +5,7 @@ import { Parallax } from 'react-scroll-parallax'
 
 const Networking = () => {
     return (
-        <section className='flex flex-col lg:flex-row items-center lg:items-start lg:justify-center w-full h-[970px] md:h-[1000px] lg:h-[580px] py-[100px] 2xl:h-[650px] 3xl:h-[700px]'>
+        <section className='flex flex-col lg:flex-row items-center lg:items-start lg:justify-center w-full h-[970px] md:h-[1000px] lg:h-[580px] lg:py-[100px] 2xl:h-[650px] 3xl:h-[700px]'>
             <Parallax speed={-2}
                 translateX={['-300px', '0px']}
                 translateY={['0px', '50px']}
@@ -31,7 +31,7 @@ const Networking = () => {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     initial={{ x: -150, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    className='absolute max-w-full w-[500px] h-[400px] md:w-[800px] md:h-[450px] lg:w-[85%] xl:w-[68%] 2xl:h-[300px] 4xl:w-[1500px] 4xl:h-[800px] top-48 md:top-48 md:-left-16 lg:top-32 lg:-left-32 2xl:top-60 2xl:-left-48 4xl:top-[-6rem]'>
+                    className='absolute max-w-full w-full h-[350px] md:w-[800px] md:h-[450px] lg:w-[85%] xl:w-[68%] 2xl:h-[300px] 4xl:w-[1500px] 4xl:h-[800px] top-52 md:top-48 md:-left-16 lg:top-32 lg:-left-32 2xl:top-60 2xl:-left-48 4xl:top-[-6rem]'>
                     <Image fill src={'/assets/images/ship.png'} alt="ship" className='object-contain' />
                 </motion.div>
             </div>
