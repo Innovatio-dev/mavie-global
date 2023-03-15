@@ -15,8 +15,8 @@ interface data {
     surname: string;
     email: string;
     mavieId: string;
+    message: string;
     listId: string;
-    terms: boolean;
 }
 
 const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
@@ -25,10 +25,11 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
         surname: '',
         email: '',
         mavieId: '',
-        listId: '',
-        terms: false
+        message: '',
+        listId: ''
     })
     const [errorMessage, setErrorMessage] = useState<string>('')
+    const [terms, setTerms] = useState<boolean>(false)
     const [errorAgree, setErrorAgree] = useState<string>('')
     const [isSubmitDisabled, setIsSubmitDisabled] = useState(true)
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -40,13 +41,14 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
             .then(function () {
                 console.log(formData)
                 formBody.reset()
+                setTerms(false)
                 setDataForm({
                     name: '',
                     surname: '',
                     email: '',
                     mavieId: '',
-                    listId: '',
-                    terms: false
+                    message: '',
+                    listId: ''
                 })
             })
             .catch(function (error) {
@@ -64,9 +66,10 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
         setErrorAgree('Please agree terms and conditions')
     }
     const disableSubmit = () => {
-        setIsSubmitDisabled(true)
+        setIsSubmitDisabled(!terms)
     }
     const activateButton = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setTerms(true)
         setIsSubmitDisabled(!event.target.checked)
     }
     return (
@@ -166,6 +169,7 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                         className="bg-transparent w-full lg:w-[95%] h-[200px] border border-gray-600 py-4 pl-4 rounded-lg relative resize-none mx-auto"
                     >
                     </textarea>
+                    {(mavieId && !dataForm.message) ? <span className='text-[#D14B4B] pl-4'>{errorMessage}</span> : null}
                 </div>
                 <div>
                     <div className='flex flex-row items-center justify-around w-[95%] max-w-[560px] mx-auto lg:py-2 py-0'>
@@ -174,8 +178,6 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                                 <input
                                     onChange={activateButton}
                                     type="checkbox"
-                                    name='terms'
-                                    id='terms'
                                     onClick={disableSubmit}
                                 />
                                 <div>
@@ -199,7 +201,8 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                                 id='submit'
                                 type="submit"
                                 name='submit'
-                                disabled={isSubmitDisabled}>
+                                disabled={isSubmitDisabled}
+                            >
                                 <p className='px-12 py-2 cursor-pointer'>Send</p>
                             </button>
                         </Button>

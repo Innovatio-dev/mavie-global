@@ -12,7 +12,7 @@ import Networking from '@/components/sections/networking'
 // import Speakers from '@/components/sections/Speakers'
 import Loader from '@/components/custom/Loader'
 import Head from 'next/head'
-import ContactUs from '@/components/sections/ContactUs'
+// import ContactUs from '@/components/sections/ContactUs'
 
 export default function LandingPage() {
     return (
@@ -32,7 +32,7 @@ export default function LandingPage() {
             <Networking/>
             <AttendeesSection />
             <NewsLetter/>
-            <ContactUs/>
+            {/* <ContactUs/> */}
         </MainLayout>
     )
 }
