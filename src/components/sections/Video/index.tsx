@@ -65,7 +65,7 @@ const EmbededVideo = () => {
     >
         <iframe
             className = 'h-full w-full ease-in-out transition-all '
-            src="https://www.youtube.com/embed/8DjXj39E9K8"
+            src="https://www.youtube.com/embed/qq1VE5XCmPE"
             title="YouTube video player"
             allow="accelerometer;
             clipboard-write;

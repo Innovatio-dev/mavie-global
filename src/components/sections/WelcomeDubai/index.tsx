@@ -31,8 +31,8 @@ const WelcomeDubai = () => {
                     reverse={false}
                     title="Mavie Vision"
                     subTitle="Road to 100M"
-                    content1="Built on strong fundamentals and guided by a clear long-term strategy, MaVie's grand vision will position the company as one of the most prominent leaders in the WEB3. <strong>MaVie's grand vision</strong> will position the company as one of the most prominent leaders in the WEB3."
-                    content2="Community building will be a critical aspect of MaVie's user acquisition strategy. Therefore the company is creating a constant vibrant and engaged community around its platform, giving sense of belonging and ownership among its users. It will incentivise user engagement through rewards programs, referral programs, and other creative initiatives."
+                    content1="Built on strong fundamentals and guided by a clear long-term strategy, <strong>MaVie’s grand vision</strong> will position the company as one of the most prominent leaders in the WEB3."
+                    content2="Community building is a critical aspect of MaVie's user acquisition strategy. Therefore the company is creating a constant vibrant and engaged community around its platform, giving sense of belonging and ownership among its users. It incentivise user engagement through rewards programs, referral programs, and other creative initiatives."
                     img="/assets/images/welcome1.png"
                     leftBottom={false}
                     leftTop
@@ -42,8 +42,8 @@ const WelcomeDubai = () => {
                     reverse
                     title="strategic partnership"
                     subTitle="ultron & mavie"
-                    content1="Empowered by a <strong>massive community</strong>, Ultron stands ready to conquer the world. Empowered by a massive community, Ultron stands ready to conquer the world. Ultron Foundation is today the planet's fastest-growing layer-1 blockchain and we are proud to be in partnership with them."
-                    content2="MaVie will help Ultron plan to reach new users and enter different markets, by giving insights-that cater to specific regions and languages. Doing so, they will grow their user base and make their product more accessible to people around the world.</br></br> Together, they're making their vision a reality!"
+                    content1="Empowered by a <strong>massive community</strong>, Ultron stands ready to conquer the world. Ultron Foundation is today the planet's fastest-growing layer-1 blockchain and we are proud to be in partnership with them. </br>"
+                    content2="MaVie will help Ultron plan to reach new users and enter different markets, by giving insights-that cater to specific regions and languages. Doing so, they will grow their user base and make their product more accessible to people around the world. </br> Together, they're making their vision a reality!"
                     img="/assets/images/welcome2.png"
                     leftBottom={false}
                     leftTop={false}
