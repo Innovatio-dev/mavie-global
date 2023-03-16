@@ -7,7 +7,6 @@ import { slideLeft, nothing, zoomIn } from '@/utils/motion_effects'
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { Parallax } from 'react-scroll-parallax'
 
 const cyanBalls = [
     {
@@ -53,52 +52,64 @@ const pinkBalls = [
     }
 ]
 const posts: Post[] = [{
+    id: 1,
     author: 'CHRISTINE V.',
     from: 'MaVie member',
     message: 'Thanks to the help of Mavie my life has totally changed and I want to make sure others don\'t miss out on the opportunity.'
 }, {
+    id: 2,
     author: 'DAILA D.',
     from: 'MaVie member',
     message: 'Thank you Mavie for this unique opportunity to start getting additional income.'
 }, {
+    id: 3,
     author: 'jOSHUA C.',
     from: 'MaVie member',
     message: 'Ultron and Mavie have enabled myself and many others to not only get back on our feet but fly.'
 }, {
+    id: 4,
     author: 'omar g.',
     from: 'MaVie member',
     message: 'Thanks to Mavie and Ultron, I’m excited to be part of this amazing project that’s completely outside the box.'
 }, {
+    id: 5,
     author: 'karl k.',
     from: 'MaVie member',
     message: 'Working with Mavie has been a game-changer for me. It\'s allowed me to grow my business and reach a wider audience.'
 }, {
+    id: 6,
     author: 'kathleen o. s.',
     from: 'MaVie member',
     message: 'After losing everything I had in the past, Ultron and Mavie gave me faith and hope for the future!'
 }, {
+    id: 7,
     author: 'marco p.',
     from: 'MaVie member',
     message: 'The realisation was crystal clear, Ultron has a vision and Mavie is allowing us to partake in their journey! '
 }, {
+    id: 8,
     author: 'misha s.',
     from: 'MaVie member',
     message: `I’m so grateful to Mavie for this once-in-a-lifetime opportunity for me and my family.
     `
 }, {
+    id: 9,
     author: 'neisha m.',
     from: 'MaVie member',
     message: `I truly believe this is a right place, right time moment and Mavie dropped a gem in our hands!
     `
 }, {
+    id: 10,
     author: 'juan g.',
     from: 'MaVie member',
     message: 'Mavie\'s affiliate program is a win-win situation - I get to earn money while promoting products I believe in and that benefit others.'
 }, {
+    id: 11,
     author: 'minjun x.',
     from: 'MaVie member',
     message: 'A ground-breaking project with momentum showing no sign of slowing down, even after launching in a bear market!'
 }, {
+    id: 12,
     author: 'ahmad d.',
     from: 'MaVie member',
     message: 'I appreciate the transparency and integrity of Mavie\'s affiliate program. They value their affiliates and always treat us fairly.'
@@ -202,7 +213,7 @@ export default function AttendeesSection() {
                 viewport={{ once: true }}
                 className={styles.grid}>
                 {entries.map((item, index) => <motion.div
-                    key={index}
+                    key={item.id}
                     custom={index}
                     variants={slideLeft}>
                     <Card {...item} /></motion.div>)}
