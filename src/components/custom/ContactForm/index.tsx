@@ -10,7 +10,7 @@ interface IContactForm {
     mavieId: boolean,
     listId: number
 }
-interface data {
+interface IData {
     name: string;
     surname: string;
     email: string;
@@ -20,7 +20,7 @@ interface data {
 }
 
 const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
-    const [dataForm, setDataForm] = useState<data>({
+    const [dataForm, setDataForm] = useState<IData>({
         name: '',
         surname: '',
         email: '',
@@ -169,7 +169,7 @@ const ContactForm:React.FC<IContactForm> = ({ mavieId, listId }) => {
                         className="bg-transparent w-full lg:w-[95%] h-[200px] border border-gray-600 py-4 pl-4 rounded-lg relative resize-none mx-auto"
                     >
                     </textarea>
-                    {(mavieId && !dataForm.message) ? <span className='text-[#D14B4B] pl-4'>{errorMessage}</span> : null}
+                    {(!dataForm.message) ? <span className='text-[#D14B4B] pl-4'>{errorMessage}</span> : null}
                 </div>
                 <div>
                     <div className='flex flex-row items-center justify-around w-[95%] max-w-[560px] mx-auto lg:py-2 py-0'>

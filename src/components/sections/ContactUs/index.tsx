@@ -64,10 +64,7 @@ const ContactUs = () => {
                             <Image src="/assets/svg/arrow_right.svg" alt="arrow" fill className='object-contain' />
                         </i>
                     </Parallax>
-                    {mavieId
-                        ? <ContactForm mavieId={mavieId} listId={listId}/>
-                        : <ContactForm mavieId={mavieId} listId={listId}/>
-                    }
+                    <ContactForm mavieId={mavieId} listId={listId}/>
                     <Parallax speed={6} rotateY={[0, 45]} rotateZ={[15, 0]}>
                         <i className='absolute w-[75px] lg:w-[150px] h-[75px] lg:h-[150px] left-0 lg:left-20 -top-32 lg:-top-48 -rotate-15'>
                             <Image src="/assets/svg/arrow_left.svg" alt="arrow" fill className='object-contain' />
