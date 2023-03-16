@@ -21,6 +21,7 @@ const Input = () => {
         } catch (error: unknown) {
             setError(true)
             setLoading(false)
+            setSuccess(true)
         }
     }
     const handleReset = () => {
