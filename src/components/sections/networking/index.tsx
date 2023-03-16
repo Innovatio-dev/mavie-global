@@ -5,7 +5,7 @@ import { Parallax } from 'react-scroll-parallax'
 
 const Networking = () => {
     return (
-        <section className='flex flex-col lg:flex-row items-center lg:items-start lg:justify-center w-full h-[970px] md:h-[1000px] lg:h-[580px] lg:py-[100px] 2xl:h-[650px] 3xl:h-[700px]'>
+        <section className='flex flex-col lg:flex-row items-center lg:items-start lg:justify-center w-full h-[950px] lg:h-[580px] lg:py-[100px] 2xl:h-[650px] 3xl:h-[700px] bg-black-bottom-gradient'>
             <Parallax speed={-2}
                 translateX={['-300px', '0px']}
                 translateY={['0px', '50px']}
@@ -78,8 +78,8 @@ const Networking = () => {
                         </motion.li>
                     </ul>
                 </div>
-                <div className='flex lg:hidden mt-[43.5rem] md:mt-[43rem] w-full h-fit text-2xl pt-32 md:pt-72 pb-12 p-5 md:p-20 bg-purple-bottom'>
-                    <ul className='flex justify-center flex-col  marker:content-diamond'>
+                <div className='flex lg:hidden w-full h-fit text-2xl md:pt-72 md:p-20 absolute -bottom-[350px]'>
+                    <ul className='flex justify-center flex-col py-6 px-6 marker:content-diamond'>
                         <motion.li
                             transition={{ duration: 0.6 }}
                             initial={{ x: -150, opacity: 0 }}
