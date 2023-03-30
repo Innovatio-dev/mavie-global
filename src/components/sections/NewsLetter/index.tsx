@@ -51,7 +51,7 @@ const NewsLetter = () => {
                 whileInView={{ y: 0, opacity: 1 }}
                 className="my-16 z-20"
             >
-                <Input placeholder="Enter Your Email." />
+                <Input />
             </motion.div>
             <div className="absolute min-h-screen w-full">
                 <motion.div

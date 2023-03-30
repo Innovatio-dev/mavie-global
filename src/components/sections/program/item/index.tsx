@@ -1,6 +1,7 @@
 import styles from './styles.module.sass'
 
 export interface IItemProps {
+    id: number,
     title: string,
     subtitle: string,
     startColor: string,

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { BsCheck } from 'react-icons/bs'
 import styles from './styles.module.sass'
 export interface Post{
+    id: number,
     message: string,
     author: string,
     from: string
