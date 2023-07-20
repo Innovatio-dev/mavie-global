@@ -9,6 +9,12 @@ export const NAVIGATION_LINKS = [
         icon: <Marker />
     },
     {
+        name: 'About us',
+        to: '/about-us',
+        icon: <Marker />,
+        isLink: true
+    },
+    {
         name: 'why mavie?',
         to: '#why-mavie',
         icon: <Marker />
