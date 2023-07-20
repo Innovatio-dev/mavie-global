@@ -9,10 +9,12 @@ export default function AboutUsPage() {
     return (
         <MainLayout>
             <section className={`
+                lines
                 w-full h-fit mt-28
                 [&_p]:text-[clamp(16px,_50%,_20px)] [&_p]:font-extralight [&_p]:leading-[150%] [&_p]:tracking-[0.5px]
                 [&_p_a]:text-brand-cyan [&_p_a]:font-medium [&_p_a]:underline [&_p_a]:underline-offset-4
                 [&_p_span]:font-medium
+                pt-[50px] pb-[200px] mb-[-180px]
             `}>
                 <div className='w-full max-w-[800px] flex flex-col gap-[50px] px-4 lg:px-0 mx-auto'>
                     <div>
