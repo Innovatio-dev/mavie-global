@@ -23,6 +23,12 @@ export const NAVIGATION_LINKS = [
         name: 'events',
         to: '#newsletter',
         icon: <Marker />
+    },
+    {
+        name: 'Backoffice',
+        to: 'https://www.backoffice.mavie.global',
+        icon: <Marker />,
+        isLink: true
     }
     // {
     //     name: 'team',

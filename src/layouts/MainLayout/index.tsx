@@ -49,7 +49,6 @@ function Header() {
                         </div>
                     </Link>
                     <div className='hidden lg:flex items-center gap-5'>
-                        {/* <Link href='/about-us' className='text-sm uppercase hover:text-brand-pink transition-all ease-in-out'>About us</Link> */}
                         {
                             NAVIGATION_LINKS.map(({ name, to, isLink }) => (
                                 isLink
@@ -62,7 +61,6 @@ function Header() {
                                     >{ name }</button>
                             ))
                         }
-                        <Link href='https://www.backoffice.mavie.global' target='_blank' className='text-sm uppercase hover:text-brand-pink transition-all ease-in-out'>Backoffice</Link>
                         <CallToAction />
                     </div>
                     <MobileMenu onClick={(to) => handleClick(to)} />
