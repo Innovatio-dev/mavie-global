@@ -7,17 +7,17 @@
       }
     </style>
     <radialGradient id="Degradado_sin_nombre" data-name="Degradado sin nombre" cx="-927.34" cy="558.7" fx="-927.34" fy="558.7" r="1" gradientTransform="translate(63736.69 -41213.03) rotate(-63.99) scale(70.07 -70.07)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#16191c"/>
-      <stop offset=".26" stop-color="#121518"/>
-      <stop offset=".43" stop-color="#12151b"/>
-      <stop offset=".52" stop-color="#12161d"/>
-      <stop offset=".67" stop-color="#10141b"/>
-      <stop offset=".7" stop-color="#191620"/>
-      <stop offset=".76" stop-color="#321c2f"/>
-      <stop offset=".82" stop-color="#5a2547"/>
-      <stop offset=".9" stop-color="#933368"/>
-      <stop offset=".99" stop-color="#da4492"/>
-      <stop offset="1" stop-color="#e14696"/>
+      <stop offset="0" stopColor="#16191c"/>
+      <stop offset=".26" stopColor="#121518"/>
+      <stop offset=".43" stopColor="#12151b"/>
+      <stop offset=".52" stopColor="#12161d"/>
+      <stop offset=".67" stopColor="#10141b"/>
+      <stop offset=".7" stopColor="#191620"/>
+      <stop offset=".76" stopColor="#321c2f"/>
+      <stop offset=".82" stopColor="#5a2547"/>
+      <stop offset=".9" stopColor="#933368"/>
+      <stop offset=".99" stopColor="#da4492"/>
+      <stop offset="1" stopColor="#e14696"/>
     </radialGradient>
   </defs>
   <path class="cls-1" d="m29.72.15c18.06-1.73,34.11,11.51,35.84,29.57,1.73,18.06-11.51,34.11-29.57,35.84C17.93,67.29,1.88,54.05.15,35.99-1.58,17.93,11.66,1.88,29.72.15Z"/>
