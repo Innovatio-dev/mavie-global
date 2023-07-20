@@ -19,11 +19,11 @@ export default function ScoreBoard() {
                 <tbody className='font-bold'>
                     {
                         SCORE_DATA.map(({ ranking, company, revenue }) => (
-                            <tr key={ranking} className={`bg-brand-black ${company === 'MaVie Global' && 'mavieRow'}`}>
+                            <tr key={ranking} className={`${company === 'MaVie Global' ? 'bg-main-gradient text-black' : 'bg-brand-black'}`}>
                                 <td className={`py-[14.13px] pl-[26px] ${ranking === 10 && 'rounded-bl-xl overflow-hidden'}`}>
-                                    <div className={'w-[clamp(31.7px,_1vw,_48px)] h-[clamp(31.7px,_1vw,_48px)] flex justify-end bg-vertical-gradient rounded'}>
+                                    <div className={'w-[clamp(45px,_1vw,_48px)] h-[clamp(45px,_1vw,_48px)] flex justify-end bg-vertical-gradient rounded'}>
                                         <div className="w-[calc(100%-0.2rem)] h-full flex flex-col justify-center items-center bg-black rounded-r">
-                                            <span className="text-[clamp(16px,_1vw,_30px)] font-eesti font-semibold italic uppercase tracking-[2.6px] !leading-none -ml-[0.2rem]">{ ranking }</span>
+                                            <span className="text-[clamp(20px,_1vw,_30px)] text-white font-eesti font-semibold italic uppercase tracking-[2.6px] !leading-none -ml-[0.2rem]">{ ranking }</span>
                                         </div>
                                     </div>
                                 </td>
