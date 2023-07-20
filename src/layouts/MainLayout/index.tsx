@@ -49,6 +49,7 @@ function Header() {
                         </div>
                     </Link>
                     <div className='hidden lg:flex items-center gap-5'>
+                        <Link href='/about-us' className='text-sm uppercase hover:text-brand-pink transition-all ease-in-out'>About us</Link>
                         {
                             NAVIGATION_LINKS.map(({ name, to }) => (
                                 <button
