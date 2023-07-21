@@ -100,8 +100,8 @@ export default function AboutUsPage() {
                             <span className='text-[8.8px] font-dm mb-[clamp(5.2px,_1vw,_18px)]'>MAVIE GLOBAL</span>
                             <span className='text-[clamp(18.5px,_5vw,_35px)] leading-[85%] mb-[clamp(13.1px,_1vw,_21.5px)]'>Join the no.1 Web3 affiliate <br /> marketing company.</span>
                             <Link
-                                href='https://www.backoffice.mavie.global/login'
-                                target='_blank'
+                                href='https://mavie.global'
+                                target='_self'
                                 className='w-fit min-w-max bg-main-gradient font-dm text-[clamp(6px,_5vw,_14px)] font-bold px-4 py-2 rounded-full'
                             >JOIN MAVIE NOW</Link>
                         </div>
@@ -150,8 +150,8 @@ export default function AboutUsPage() {
                             <span className='text-[clamp(18.5px,_5vw,_42.5px)] leading-[85%] mb-[clamp(13.1px,_1vw,_21.5px)]'>Become our partner</span>
                             <span className='hidden lg:block text-[11px] font-dm mb-[clamp(5.2px,_1vw,_18px)]'>Join MaVie and become a part of the fastest-growing affiliate marketing <br /> company. Own your future and seize this once-in-a-lifetime opportunity.</span>
                             <Link
-                                href='https://www.backoffice.mavie.global/login'
-                                target='_blank'
+                                href='https://mavie.global'
+                                target='_self'
                                 className='w-fit min-w-max bg-main-gradient font-dm text-sm font-bold px-5 py-2 rounded-full'
                             >JOIN MAVIE NOW</Link>
                         </div>
