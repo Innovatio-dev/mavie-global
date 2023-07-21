@@ -31,19 +31,20 @@ const Menu = ({ isOpen, onClick }: { isOpen: boolean, onClick: (to: string) => v
                 <Image src='/assets/svg/arrow_right_lines.svg' width={60} height={60} priority alt='arrow' className='absolute bottom-40 right-16 rotate-[50deg]' />
                 <ul className='relative z-10'>
                     {
-                        NAVIGATION_LINKS.map(({ name, to, icon }) => (
+                        NAVIGATION_LINKS.map(({ name, to, icon, isLink }) => (
                             <li key={name}>
-                                <button
-                                    aria-label="section"
-                                    onClick={() => onClick(to)}
-                                    className={styles.link}
-                                ><span>{ icon }</span> { name }</button>
+                                {
+                                    isLink
+                                        ? <Link href={to} className={styles.link} target={to.includes('https://') ? '_blank' : '_self'} onClick={() => onClick('')}><span>{ icon }</span> { name }</Link>
+                                        : <button
+                                            aria-label="section"
+                                            onClick={() => onClick(to)}
+                                            className={styles.link}
+                                        ><span>{ icon }</span> { name }</button>
+                                }
                             </li>
                         ))
                     }
-                    <li>
-                        <Link href='https://www.backoffice.mavie.global' target='_blank' className={styles.link}><Marker /> Backoffice</Link>
-                    </li>
                 </ul>
             </m.div>
         )}
@@ -78,7 +79,9 @@ export default function MobileMenu({ onClick }: { onClick: (to: string) => void 
     }
     const handleClickOption = (to: string) => {
         setIsOpen(false)
-        onClick(to)
+        if (to !== '') {
+            onClick(to)
+        }
     }
 
     return (

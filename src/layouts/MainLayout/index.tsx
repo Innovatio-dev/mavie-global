@@ -50,16 +50,17 @@ function Header() {
                     </Link>
                     <div className='hidden lg:flex items-center gap-5'>
                         {
-                            NAVIGATION_LINKS.map(({ name, to }) => (
-                                <button
-                                    aria-label="section"
-                                    key={name}
-                                    onClick={() => handleClick(to)}
-                                    className='text-sm uppercase hover:text-brand-pink transition-all ease-in-out'
-                                >{ name }</button>
+                            NAVIGATION_LINKS.map(({ name, to, isLink }) => (
+                                isLink
+                                    ? <Link key={name} href={to} className='text-sm uppercase hover:text-brand-pink transition-all ease-in-out'>{name}</Link>
+                                    : <button
+                                        aria-label="section"
+                                        key={name}
+                                        onClick={() => handleClick(to)}
+                                        className='text-sm uppercase hover:text-brand-pink transition-all ease-in-out'
+                                    >{ name }</button>
                             ))
                         }
-                        <Link href='https://www.backoffice.mavie.global' target='_blank' className='text-sm uppercase hover:text-brand-pink transition-all ease-in-out'>Backoffice</Link>
                         <CallToAction />
                     </div>
                     <MobileMenu onClick={(to) => handleClick(to)} />
@@ -85,7 +86,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
             <Header />
             <main className=' overflow-clip'>
                 { children }
-                <div id='cta' className='w-full flex lg:hidden justify-center opacity-100 transition-opacity duration-300 fixed bottom-10 left-1/2 -translate-x-1/2 z-50'>
+                <div id='cta' className='w-full flex lg:hidden justify-center opacity-100 transition-opacity duration-300 fixed bottom-10 left-1/2 -translate-x-1/2 z-40'>
                     <CallToAction />
                 </div>
             </main>

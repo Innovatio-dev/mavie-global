@@ -50,3 +50,20 @@ a {
     bottom: -2px;
   }
 }
+
+.ultronRow {
+  position: relative;
+  z-index: 0;
+  &:after {
+      background: var(--main-gradient);
+      content: "";
+      inset: 0;
+      padding: 4px;
+      position: absolute;
+      z-index: -1;
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+  }
+}

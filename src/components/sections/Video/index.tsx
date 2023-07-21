@@ -41,7 +41,7 @@ export default function Video () {
                         <source src="/assets/videos/Background-video.mp4" type="video/mp4" />
                     </video> */}
                     {videOpened
-                        ? <EmbededVideo/>
+                        ? <EmbededVideo videoURL={'https://www.youtube-nocookie.com/embed/qq1VE5XCmPE'}/>
                         : <StrangeButton onClick={handleVideoOpen}>{'Play video'} <BiPlayCircle className='text-5xl'/></StrangeButton>
                     }
 
@@ -56,7 +56,7 @@ export default function Video () {
     </section>
 }
 
-const EmbededVideo = () => {
+export const EmbededVideo = ({ videoURL }:{videoURL:string}) => {
     return <motion.div
         className = 'h-full w-full relative'
         transition={{ duration: 0.8 }}
@@ -65,7 +65,7 @@ const EmbededVideo = () => {
     >
         <iframe
             className = 'h-full w-full ease-in-out transition-all '
-            src="https://www.youtube.com/embed/qq1VE5XCmPE"
+            src={videoURL}
             title="YouTube video player"
             allow="accelerometer;
             clipboard-write;

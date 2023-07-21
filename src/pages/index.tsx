@@ -12,9 +12,13 @@ import Networking from '@/components/sections/networking'
 // import Speakers from '@/components/sections/Speakers'
 import Loader from '@/components/custom/Loader'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 // import ContactUs from '@/components/sections/ContactUs'
 
 export default function LandingPage() {
+    const router = useRouter()
+    const hasAnchorLink = router.asPath.includes('#')
+
     return (
         <MainLayout>
             <Head>
@@ -23,7 +27,7 @@ export default function LandingPage() {
                 <meta property="og:image" content="https://mavie.global/assets/images/landing-og.png" />
             </Head>
             <button data-tf-popup="MYBurb0m" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=MaVie Global Become a Partner (PopUp)" data-tf-open="load" data-tf-transitive-search-params data-tf-medium="snippet" style={{ all: 'unset' }}></button><script defer src="//embed.typeform.com/next/embed.js"></script>
-            <Loader />
+            {!hasAnchorLink && <Loader />}
             <Hero />
             <Video/>
             <WelcomeDubai/>
