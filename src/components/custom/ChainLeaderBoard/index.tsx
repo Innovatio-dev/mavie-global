@@ -11,45 +11,47 @@ export default function ChainLeaderBoard() {
                 <Image src='/assets/images/about-us/llama.png' alt='DeFi Llama Chains Leaderboard' width={50} height={50} />
                 <span className='font-dm text-xl font-bold'>DeFi Llama Chains Leaderboard</span>
             </div>
-            <table className={`
-                w-full font-dm text-xl border-separate border-spacing-y-1 mt-3
-                [&_th]:text-[11px] [&_th]:font-normal [&_th]:py-[14.13px]
-            `}>
-                <thead>
-                    <tr className='bg-purple-gradient'>
-                        <th className='text-start rounded-tl-xl pl-[26px]'>Name</th>
-                        <th className='hidden lg:table-cell text-end'>Protocols</th>
-                        <th className='hidden lg:table-cell text-end'>Active Users</th>
-                        <th className='hidden lg:table-cell text-end'>1d Change</th>
-                        <th className='hidden lg:table-cell text-end'>7d Change</th>
-                        <th className='text-end'>1m Change</th>
-                        <th className='text-end rounded-tr-xl lg:rounded-none pr-[26px] lg:pr-0'>TVL</th>
-                        <th className='hidden lg:table-cell text-end rounded-tr-xl pr-[26px]'>Stables</th>
-                    </tr>
-                </thead>
-                <tbody className='font-bold'>
+            <div className='w-full grid gap-y-[3px] font-dm text-xl rounded-xl overflow-hidden mt-3'>
+
+                {/* Table head */}
+                <div className={`
+                        bg-purple-gradient grid grid-cols-[3fr,_repeat(2,_2fr)] lg:grid-cols-[3fr,_repeat(7,_2fr)] items-center py-[15px] px-[25px]
+                        [&_span]:text-[11px] [&_span]:font-normal
+                    `}>
+                    <span className='text-start rounded-tl-xl'>Name</span>
+                    <span className='hidden lg:table-cell text-end'>Protocols</span>
+                    <span className='hidden lg:table-cell text-end'>Active Users</span>
+                    <span className='hidden lg:table-cell text-end'>1d Change</span>
+                    <span className='hidden lg:table-cell text-end'>7d Change</span>
+                    <span className='text-end'>1m Change</span>
+                    <span className='text-end rounded-tr-xl lg:rounded-none lg:pr-0'>TVL</span>
+                    <span className='hidden lg:table-cell text-end rounded-tr-xl'>Stables</span>
+                </div>
+
+                {/* Table body */}
+                <div className='font-bold grid gap-y-[1px]'>
                     {
                         CHAIN_DATA.map(({ ranking, name, protocols, users, day, week, month, tvl, stables }) => (
-                            <tr key={ranking} className={`bg-brand-black ${name === 'Ultron' && 'ultronRow'}`}>
-                                <td className={`text-[10px] py-[14.13px] pl-[26px] ${ranking === 11 && 'rounded-bl-xl overflow-hidden'}`}>
-                                    <div className='flex items-center'>
+                            <div key={ranking} className={`bg-brand-black grid grid-cols-[3fr,_repeat(2,_2fr)] lg:grid-cols-[3fr,_repeat(7,_2fr)] items-center py-[10px] px-[25px] ${name === 'Ultron' && 'ultronRow'}`}>
+                                <span className={`text-[10px] ${ranking === 11 && 'rounded-bl-xl overflow-hidden'}`}>
+                                    <span className='flex items-center'>
                                         <span className='mr-4'>{ ranking }</span>
                                         <Image src={`/assets/images/about-us/chains/${name}.png`} alt={ name } width={18} height={18} className='mr-2 min-w-fit'/>
                                         <span>{ name }</span>
-                                    </div>
-                                </td>
-                                <td className='hidden lg:table-cell text-[10px] text-end py-[14.13px]'>{protocols}</td>
-                                <td className='hidden lg:table-cell text-[10px] text-end py-[14.13px]'>{users}</td>
-                                <td className={`hidden lg:table-cell text-[10px] text-end py-[14.13px] ${isPositive(day) ? 'text-green-600' : 'text-red-600'}`}>{day}</td>
-                                <td className={`hidden lg:table-cell text-[10px] text-end py-[14.13px] ${isPositive(week) ? 'text-green-600' : 'text-red-600'}`}>{week}</td>
-                                <td className={`text-[10px] text-end py-[14.13px] ${isPositive(month) ? 'text-green-600' : 'text-red-600'}`}>{month}</td>
-                                <td className={`text-[10px] text-end py-[14.13px] pr-[26px] lg:pr-0 ${ranking === 11 && 'rounded-br-xl lg:rounded-none overflow-hidden'}`}>{tvl}</td>
-                                <td className={`hidden lg:table-cell text-[10px] text-end py-[14.13px] pr-[26px] ${ranking === 11 && 'rounded-br-xl overflow-hidden'}`}>{stables}</td>
-                            </tr>
+                                    </span>
+                                </span>
+                                <span className='hidden lg:table-cell text-[10px] text-end'>{protocols}</span>
+                                <span className='hidden lg:table-cell text-[10px] text-end'>{users}</span>
+                                <span className={`hidden lg:table-cell text-[10px] text-end ${isPositive(day) ? 'text-green-600' : 'text-red-600'}`}>{day}</span>
+                                <span className={`hidden lg:table-cell text-[10px] text-end ${isPositive(week) ? 'text-green-600' : 'text-red-600'}`}>{week}</span>
+                                <span className={`text-[10px] text-end ${isPositive(month) ? 'text-green-600' : 'text-red-600'}`}>{month}</span>
+                                <span className={`text-[10px] text-end lg:pr-0 ${ranking === 11 && 'rounded-br-xl lg:rounded-none overflow-hidden'}`}>{tvl}</span>
+                                <span className={'hidden lg:table-cell text-[10px] text-end'}>{stables}</span>
+                            </div>
                         ))
                     }
-                </tbody>
-            </table>
+                </div>
+            </div>
         </div>
 
     )

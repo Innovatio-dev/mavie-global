@@ -86,7 +86,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
             <Header />
             <main className=' overflow-clip'>
                 { children }
-                <div id='cta' className='w-full flex lg:hidden justify-center opacity-100 transition-opacity duration-300 fixed bottom-10 left-1/2 -translate-x-1/2 z-50'>
+                <div id='cta' className='w-full flex lg:hidden justify-center opacity-100 transition-opacity duration-300 fixed bottom-10 left-1/2 -translate-x-1/2 z-40'>
                     <CallToAction />
                 </div>
             </main>
