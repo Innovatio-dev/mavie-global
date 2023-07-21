@@ -9,7 +9,7 @@
         }
     }
     .containerOptions {
-        @apply w-full h-[calc(100vh-96px)] block bg-black absolute top-24 left-0;
+        @apply w-full h-[calc(100vh)] block bg-black absolute top-24 left-0;
 
         ul {
             @apply w-full flex flex-col gap-16 mt-10;
