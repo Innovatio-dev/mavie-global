@@ -30,7 +30,7 @@ export default function ScoreBoard() {
                 }
             </div>
 
-            <span className='block text-sm text-[#9E9E9E] text-center mt-3'>(MaVie Global - the 2nd fastest revenue-growing affiliate company in the world)</span>
+            <span className='block text-sm text-brand-light text-center mt-3'>(MaVie Global - the 2nd fastest revenue-growing affiliate company in the world)</span>
         </div>
 
     )

@@ -5,6 +5,7 @@ import { BRANDS } from '@/utils/constants/score'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, Variants } from 'framer-motion'
+import { EmbededVideo } from '@/components/sections/Video'
 
 export default function AboutUsPage() {
     const fadeUpEntrance: Variants = {
@@ -68,9 +69,10 @@ export default function AboutUsPage() {
 
                     <motion.div initial="offscreen" whileInView="onscreen" variants={fadeEntrance}>
                         <div className='w-full aspect-video relative'>
-                            <Image src='/assets/images/about-us/2.png' alt='THE 100M MEMBER VISION' fill />
+                            <EmbededVideo videoURL={'https://www.youtube-nocookie.com/embed/UyNuCLtDe8g?rel=0'}/>
+                            {/* <Image src='/assets/images/about-us/2.png' alt='THE 100M MEMBER VISION' fill /> */}
                         </div>
-                        <span className='block font-dm text-sm text-brand-gray text-center mt-3'>(MaVie Global - road to 100M users. SOUND ON)</span>
+                        <span className='block font-dm text-sm text-brand-light text-center mt-3'>(MaVie Global - road to 100M users. SOUND ON)</span>
                     </motion.div>
 
                     <motion.div initial="offscreen" whileInView="onscreen" variants={fadeUpEntrance}>
