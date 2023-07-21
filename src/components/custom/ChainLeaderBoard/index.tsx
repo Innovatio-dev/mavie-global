@@ -33,7 +33,7 @@ export default function ChainLeaderBoard() {
                     {
                         CHAIN_DATA.map(({ ranking, name, protocols, users, day, week, month, tvl, stables }) => (
                             <div key={ranking} className={`bg-brand-black grid grid-cols-[3fr,_repeat(2,_2fr)] lg:grid-cols-[3fr,_repeat(7,_2fr)] items-center py-[10px] px-[25px] ${name === 'Ultron' && 'ultronRow'}`}>
-                                <span className={`text-[10px] ${ranking === 11 && 'rounded-bl-xl overflow-hidden'}`}>
+                                <span className={'text-[10px]'}>
                                     <span className='flex items-center'>
                                         <span className='mr-4'>{ ranking }</span>
                                         <Image src={`/assets/images/about-us/chains/${name}.png`} alt={ name } width={18} height={18} className='mr-2 min-w-fit'/>
@@ -45,7 +45,7 @@ export default function ChainLeaderBoard() {
                                 <span className={`hidden lg:table-cell text-[10px] text-end ${isPositive(day) ? 'text-green-600' : 'text-red-600'}`}>{day}</span>
                                 <span className={`hidden lg:table-cell text-[10px] text-end ${isPositive(week) ? 'text-green-600' : 'text-red-600'}`}>{week}</span>
                                 <span className={`text-[10px] text-end ${isPositive(month) ? 'text-green-600' : 'text-red-600'}`}>{month}</span>
-                                <span className={`text-[10px] text-end lg:pr-0 ${ranking === 11 && 'rounded-br-xl lg:rounded-none overflow-hidden'}`}>{tvl}</span>
+                                <span className={'text-[10px] text-end lg:pr-0'}>{tvl}</span>
                                 <span className={'hidden lg:table-cell text-[10px] text-end'}>{stables}</span>
                             </div>
                         ))
