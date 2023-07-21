@@ -52,7 +52,6 @@ export default function AboutUsPage() {
                 <div className='w-full max-w-[800px] flex flex-col gap-[50px] px-4 lg:px-0 mx-auto'>
                     <motion.div initial="offscreen" whileInView="onscreen" variants={fadeUpEntrance}>
                         <h1 className='text-[clamp(20px,_5vw,_40px)] font-semibold leading-[120%] tracking-widest'>MaVie Global Sales Break $100M in Under 1 Year, Creating More Than $400M On-Chain Value</h1>
-                        <span className='font-dm text-brand-gray mt-3'>10 min read | 5 days ago</span>
                     </motion.div>
                     <motion.p initial="offscreen" whileInView="onscreen" variants={fadeUpEntrance}>Celebrating its first year, MaVie Global broke the $100M mark, making them the second fastest-growing affiliate company in the world by revenue. They did that by becoming the first affiliate company in the world that partnered with Layer-1 blockchain, bringing its total value locked to a whopping half billion dollars.</motion.p>
 
