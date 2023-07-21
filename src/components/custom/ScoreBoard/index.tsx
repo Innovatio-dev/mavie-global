@@ -4,9 +4,9 @@ import { IoChevronForwardOutline } from 'react-icons/io5'
 export default function ScoreBoard() {
     return (
         <div className='w-full font-dm'>
-            <div className="w-full grid gap-y-2 rounded-xl overflow-hidden">
+            <div className="text-xs md:text-base w-full grid gap-y-2 rounded-xl overflow-hidden">
                 {/* Table head */}
-                <div className='bg-purple-gradient font-medium italic grid grid-cols-[60px,_1fr,_130px] items-center py-[14.13px] px-[26px]'>
+                <div className='bg-purple-gradient font-medium italic grid grid-cols-[60px,_1fr,_90px] md:grid-cols-[60px,_1fr,_130px] items-center py-[14.13px] px-[26px]'>
                     <span className='text-start rounded-tl-xl '>NR</span>
                     <span className='text-start '>COMPANY</span>
                     <span className='text-start rounded-tr-xl '>REVENUE <br /> GROWTH IN %</span>
@@ -15,7 +15,7 @@ export default function ScoreBoard() {
                 {/* Table body */}
                 {
                     SCORE_DATA.map(({ ranking, company, revenue }) => (
-                        <div key={ranking} className={`grid grid-cols-[60px,_1fr,_130px] items-center py-[14.13px] px-[26px] ${company === 'MaVie Global' ? 'bg-main-gradient text-black' : 'bg-brand-black'}`}>
+                        <div key={ranking} className={`grid grid-cols-[60px,_1fr,_90px] md:grid-cols-[60px,_1fr,_130px] items-center py-[14.13px] px-[26px] ${company === 'MaVie Global' ? 'bg-main-gradient text-black' : 'bg-brand-black'}`}>
                             <div className={` ${ranking === 10 && 'rounded-bl-xl overflow-hidden'}`}>
                                 <div className={'w-[clamp(45px,_1vw,_48px)] h-[clamp(45px,_1vw,_48px)] flex justify-end bg-vertical-gradient rounded'}>
                                     <div className="w-[calc(100%-0.2rem)] h-full flex flex-col justify-center items-center bg-black rounded-r">
