@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion, Variants } from 'framer-motion'
 import { EmbededVideo } from '@/components/sections/Video'
+import Head from 'next/head'
 
 export default function AboutUsPage() {
     const fadeUpEntrance: Variants = {
@@ -40,6 +41,14 @@ export default function AboutUsPage() {
 
     return (
         <MainLayout>
+            <Head>
+                <title>MaVie Global / Road to 100M members</title>
+                <meta name="description" content="Join the first affiliate marketing company in the world, which has partnered with Layer-1 blockchain, firmly on the road to 100M members and 1B in sales revenue." />
+                <meta property="og:title" content="MaVie Global / Road to 100M members" />
+                <meta name="og:description" content="Join the first affiliate marketing company in the world, which has partnered with Layer-1 blockchain, firmly on the road to 100M members and 1B in sales revenue." />
+                <meta property="og:url" content="https://mavie.global" />
+                <meta property="og:image" content="https://mavie.global/assets/images/landing-og.png" />
+            </Head>
             <motion.section className={`
                 lines
                 w-full h-fit mt-28
