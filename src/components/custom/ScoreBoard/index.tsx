@@ -1,7 +1,9 @@
 import { SCORE_DATA } from '@/utils/constants/score'
+import { useTranslation } from 'next-i18next'
 import { IoChevronForwardOutline } from 'react-icons/io5'
 
 export default function ScoreBoard() {
+    const { t } = useTranslation('about')
     return (
         <div className='w-full font-dm'>
             <div className="text-xs md:text-base w-full grid gap-y-2 rounded-xl overflow-hidden">
@@ -30,7 +32,7 @@ export default function ScoreBoard() {
                 }
             </div>
 
-            <span className='block text-sm text-brand-light text-center mt-3'>(MaVie Global - the 2nd fastest revenue-growing affiliate company in the world)</span>
+            <span className='block text-sm text-brand-light text-center mt-3'>{t('score_caption')}</span>
         </div>
 
     )

@@ -1,8 +1,11 @@
 import { CHAIN_DATA } from '@/utils/constants/score'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import { useCallback } from 'react'
 
 export default function ChainLeaderBoard() {
+    const { t } = useTranslation('about')
+
     const isPositive = useCallback((v: string) => v.includes('+'), [])
 
     return (
@@ -52,6 +55,7 @@ export default function ChainLeaderBoard() {
                     }
                 </div>
             </div>
+            <span className='block text-sm text-brand-light text-center mt-3'>{t('leaderboard_caption')}</span>
         </div>
 
     )
