@@ -1,4 +1,3 @@
-
 import { useEffect, useState, useCallback, MouseEvent, useRef } from 'react'
 import Card, { Post } from './Card'
 import styles from './styles.module.sass'

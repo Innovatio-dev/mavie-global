@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 // Components
-import OutlineLogo from '@/components/shared/OutlineLogo'
+// import OutlineLogo from '@/components/shared/OutlineLogo'
 // Context
 import { useMenu } from '@/context/Menu'
 // Framer motion
@@ -12,7 +12,7 @@ import { motion as m, AnimatePresence } from 'framer-motion'
 import { NAVIGATION_LINKS } from '@/utils/constants/layout'
 // Styles
 import styles from './styles.module.scss'
-import Marker from '@/components/shared/Marker'
+// import Marker from '@/components/shared/Marker'
 
 const Menu = ({ isOpen, onClick }: { isOpen: boolean, onClick: (to: string) => void }) => (
     <AnimatePresence>
