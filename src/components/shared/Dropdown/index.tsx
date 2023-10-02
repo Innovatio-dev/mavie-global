@@ -1,4 +1,3 @@
-
 import Image from 'next/image'
 import { useState, useRef, useEffect, useMemo } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
