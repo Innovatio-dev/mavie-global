@@ -14,6 +14,7 @@ module.exports = {
                 'brand-cyan': 'var(--brand-cyan)',
                 'brand-pink': 'var(--brand-pink)',
                 'brand-gray': 'var(--brand-gray)',
+                'brand-light': 'var(--brand-light)',
                 'brand-black': 'var(--brand-black)'
             },
             backgroundImage: {
