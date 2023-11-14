@@ -25,6 +25,7 @@ export default function LandingPage() {
                 <meta property="og:title" content="MaVie Global / All for one" />
                 <meta property="og:url" content="https://mavie.global" />
                 <meta property="og:image" content="https://mavie.global/assets/images/landing-og.png" />
+                <meta name="google-site-verification" content="w2wOmghzDGSmRQnnYWC_hO0BdPhQegZq0MjHnwn8Lc0" />
             </Head>
             <button data-tf-popup="MYBurb0m" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=MaVie Global Become a Partner (PopUp)" data-tf-open="load" data-tf-transitive-search-params data-tf-medium="snippet" style={{ all: 'unset' }}></button><script defer src="//embed.typeform.com/next/embed.js"></script>
             {!hasAnchorLink && <Loader />}
