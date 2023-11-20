@@ -14,4 +14,8 @@ export const ABOUT_LOCALES = [{
     code: 'HU',
     text: 'Hungarian',
     locale: 'hu'
+}, {
+    code: 'PH',
+    text: 'Tagalog',
+    locale: 'ph'
 }]
